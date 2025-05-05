@@ -1,0 +1,176 @@
+<svg viewBox="0 0 1000 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- 主标题 -->
+  <rect x="400" y="30" width="200" height="60" rx="10" fill="#1a73e8" />
+  <text x="500" y="65" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="white">OpenAI企业AI应用经验</text>
+  
+  <!-- 主连接线 -->
+  <line x1="500" y1="90" x2="500" y2="120" stroke="#666" stroke-width="3" />
+  
+  <!-- 第一级分支 -->
+  <g>
+    <!-- 决策阶段 -->
+    <rect x="150" y="120" width="180" height="50" rx="10" fill="#4285f4" />
+    <text x="240" y="150" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">决策阶段</text>
+    <line x1="500" y1="120" x2="330" y2="145" stroke="#666" stroke-width="2" />
+    
+    <!-- 实施阶段 -->
+    <rect x="410" y="120" width="180" height="50" rx="10" fill="#0f9d58" />
+    <text x="500" y="150" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">实施阶段</text>
+    <line x1="500" y1="120" x2="500" y2="120" stroke="#666" stroke-width="2" />
+    
+    <!-- 优化阶段 -->
+    <rect x="670" y="120" width="180" height="50" rx="10" fill="#f4b400" />
+    <text x="760" y="150" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">优化阶段</text>
+    <line x1="500" y1="120" x2="670" y2="145" stroke="#666" stroke-width="2" />
+  </g>
+  
+  <!-- 第二级分支 - 决策阶段 -->
+  <g>
+    <line x1="240" y1="170" x2="240" y2="200" stroke="#666" stroke-width="2" />
+    
+    <!-- 1. 从评估开始 -->
+    <rect x="150" y="200" width="180" height="50" rx="8" fill="#4285f4" opacity="0.8" />
+    <text x="240" y="230" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">1. 从评估开始</text>
+    
+    <!-- 3. 立即启动 -->
+    <rect x="150" y="280" width="180" height="50" rx="8" fill="#4285f4" opacity="0.8" />
+    <text x="240" y="310" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">3. 立即启动</text>
+    <line x1="240" y1="250" x2="240" y2="280" stroke="#666" stroke-width="2" />
+  </g>
+  
+  <!-- 第二级分支 - 实施阶段 -->
+  <g>
+    <line x1="500" y1="170" x2="500" y2="200" stroke="#666" stroke-width="2" />
+    
+    <!-- 2. AI融入产品 -->
+    <rect x="410" y="200" width="180" height="50" rx="8" fill="#0f9d58" opacity="0.8" />
+    <text x="500" y="230" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">2. AI融入产品</text>
+    
+    <!-- 6. 扫清障碍 -->
+    <rect x="410" y="280" width="180" height="50" rx="8" fill="#0f9d58" opacity="0.8" />
+    <text x="500" y="310" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">6. 为开发者扫清障碍</text>
+    <line x1="500" y1="250" x2="500" y2="280" stroke="#666" stroke-width="2" />
+  </g>
+  
+  <!-- 第二级分支 - 优化阶段 -->
+  <g>
+    <line x1="760" y1="170" x2="760" y2="200" stroke="#666" stroke-width="2" />
+    
+    <!-- 4. 定制调优 -->
+    <rect x="670" y="200" width="180" height="50" rx="8" fill="#f4b400" opacity="0.8" />
+    <text x="760" y="230" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">4. 定制调优模型</text>
+    
+    <!-- 5. 专家使用 -->
+    <rect x="670" y="280" width="180" height="50" rx="8" fill="#f4b400" opacity="0.8" />
+    <text x="760" y="310" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">5. 让专家使用AI工具</text>
+    <line x1="760" y1="250" x2="760" y2="280" stroke="#666" stroke-width="2" />
+    
+    <!-- 7. 大胆目标 -->
+    <rect x="670" y="360" width="180" height="50" rx="8" fill="#f4b400" opacity="0.8" />
+    <text x="760" y="390" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">7. 设定大胆自动化目标</text>
+    <line x1="760" y1="330" x2="760" y2="360" stroke="#666" stroke-width="2" />
+  </g>
+  
+  <!-- 第三级分支 - 从评估开始的细节 -->
+  <g>
+    <line x1="150" y1="225" x2="130" y2="225" stroke="#666" stroke-width="1.5" />
+    <line x1="130" y1="225" x2="130" y2="350" stroke="#666" stroke-width="1.5" />
+    
+    <rect x="20" y="350" width="160" height="40" rx="5" fill="#a0c3ff" />
+    <text x="100" y="375" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">系统化评估流程</text>
+    <line x1="130" y1="350" x2="130" y2="350" stroke="#666" stroke-width="1.5" />
+    
+    <rect x="20" y="400" width="160" height="40" rx="5" fill="#a0c3ff" />
+    <text x="100" y="425" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">衡量具体应用表现</text>
+    <line x1="130" y1="350" x2="130" y2="400" stroke="#666" stroke-width="1.5" />
+  </g>
+  
+  <!-- 第三级分支 - 立即启动的细节 -->
+  <g>
+    <line x1="330" y1="305" x2="350" y2="305" stroke="#666" stroke-width="1.5" />
+    <line x1="350" y1="305" x2="350" y2="350" stroke="#666" stroke-width="1.5" />
+    
+    <rect x="270" y="350" width="160" height="40" rx="5" fill="#a0c3ff" />
+    <text x="350" y="375" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">尽早投资</text>
+    <line x1="350" y1="350" x2="350" y2="350" stroke="#666" stroke-width="1.5" />
+    
+    <rect x="270" y="400" width="160" height="40" rx="5" fill="#a0c3ff" />
+    <text x="350" y="425" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">价值快速积累</text>
+    <line x1="350" y1="350" x2="350" y2="400" stroke="#666" stroke-width="1.5" />
+  </g>
+  
+  <!-- 第三级分支 - AI融入产品的细节 -->
+  <g>
+    <line x1="410" y1="225" x2="390" y2="225" stroke="#666" stroke-width="1.5" />
+    <line x1="390" y1="225" x2="390" y2="450" stroke="#666" stroke-width="1.5" />
+    
+    <rect x="280" y="450" width="160" height="40" rx="5" fill="#81c995" />
+    <text x="360" y="475" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">打造全新客户体验</text>
+    <line x1="390" y1="450" x2="390" y2="450" stroke="#666" stroke-width="1.5" />
+    
+    <rect x="280" y="500" width="160" height="40" rx="5" fill="#81c995" />
+    <text x="360" y="525" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">实现智能互动</text>
+    <line x1="390" y1="450" x2="390" y2="500" stroke="#666" stroke-width="1.5" />
+  </g>
+  
+  <!-- 第三级分支 - 扫清障碍的细节 -->
+  <g>
+    <line x1="590" y1="305" x2="610" y2="305" stroke="#666" stroke-width="1.5" />
+    <line x1="610" y1="305" x2="610" y2="450" stroke="#666" stroke-width="1.5" />
+    
+    <rect x="530" y="450" width="160" height="40" rx="5" fill="#81c995" />
+    <text x="610" y="475" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">自动化开发生命周期</text>
+    <line x1="610" y1="450" x2="610" y2="450" stroke="#666" stroke-width="1.5" />
+    
+    <rect x="530" y="500" width="160" height="40" rx="5" fill="#81c995" />
+    <text x="610" y="525" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">释放AI潜力</text>
+    <line x1="610" y1="450" x2="610" y2="500" stroke="#666" stroke-width="1.5" />
+  </g>
+  
+  <!-- 第三级分支 - 定制调优的细节 -->
+  <g>
+    <line x1="670" y1="225" x2="650" y2="225" stroke="#666" stroke-width="1.5" />
+    <line x1="650" y1="225" x2="650" y2="550" stroke="#666" stroke-width="1.5" />
+    
+    <rect x="570" y="550" width="160" height="40" rx="5" fill="#fde293" />
+    <text x="650" y="575" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">根据具体需求调优</text>
+    <line x1="650" y1="550" x2="650" y2="550" stroke="#666" stroke-width="1.5" />
+    
+    <rect x="570" y="600" width="160" height="40" rx="5" fill="#fde293" />
+    <text x="650" y="625" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">显著提升价值</text>
+    <line x1="650" y1="550" x2="650" y2="600" stroke="#666" stroke-width="1.5" />
+  </g>
+  
+  <!-- 第三级分支 - 专家使用的细节 -->
+  <g>
+    <line x1="850" y1="305" x2="870" y2="305" stroke="#666" stroke-width="1.5" />
+    <line x1="870" y1="305" x2="870" y2="550" stroke="#666" stroke-width="1.5" />
+    
+    <rect x="790" y="550" width="160" height="40" rx="5" fill="#fde293" />
+    <text x="870" y="575" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">最了解流程的人</text>
+    <line x1="870" y1="550" x2="870" y2="550" stroke="#666" stroke-width="1.5" />
+    
+    <rect x="790" y="600" width="160" height="40" rx="5" fill="#fde293" />
+    <text x="870" y="625" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">改进流程能力最强</text>
+    <line x1="870" y1="550" x2="870" y2="600" stroke="#666" stroke-width="1.5" />
+  </g>
+  
+  <!-- 第三级分支 - 大胆目标的细节 -->
+  <g>
+    <line x1="850" y1="385" x2="870" y2="385" stroke="#666" stroke-width="1.5" />
+    <line x1="870" y1="385" x2="870" y2="650" stroke="#666" stroke-width="1.5" />
+    
+    <rect x="790" y="650" width="160" height="40" rx="5" fill="#fde293" />
+    <text x="870" y="675" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">大量重复性工作</text>
+    <line x1="870" y1="650" x2="870" y2="650" stroke="#666" stroke-width="1.5" />
+    
+    <rect x="790" y="700" width="160" height="40" rx="5" fill="#fde293" />
+    <text x="870" y="725" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">适合自动化目标</text>
+    <line x1="870" y1="650" x2="870" y2="700" stroke="#666" stroke-width="1.5" />
+  </g>
+
+  <br/>
+  
+  <!-- 底部署名 -->
+  <text x="500" y="670" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="14" text-anchor="middle" fill="#666">© OpenAI企业AI应用指南(萤火AI百宝箱整理)</text>
+</svg>
