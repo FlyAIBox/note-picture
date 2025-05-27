@@ -1,0 +1,112 @@
+<svg viewBox="0 0 1000 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title-text { font-family: '宋体', SimSun, serif; font-size: 20px; font-weight: bold; fill: #2c3e50; }
+      .section-text { font-family: '宋体', SimSun, serif; font-size: 14px; fill: #34495e; }
+      .english-text { font-family: 'Times New Roman', serif; font-size: 12px; fill: #34495e; }
+      .formula-text { font-family: 'Times New Roman', serif; font-size: 11px; fill: #8b4513; }
+      .process-box { fill: #ecf0f1; stroke: #34495e; stroke-width: 2; }
+      .input-box { fill: #e8f5e8; stroke: #27ae60; stroke-width: 2; }
+      .output-box { fill: #fdf2e9; stroke: #e67e22; stroke-width: 2; }
+      .important-box { fill: #ffeaa7; stroke: #fdcb6e; stroke-width: 2; }
+      .arrow { stroke: #34495e; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .special-arrow { stroke: #e17055; stroke-width: 2; fill: none; marker-end: url(#arrowhead-red); }
+      .dashed-arrow { stroke: #7f8c8d; stroke-width: 1.5; fill: none; stroke-dasharray: 5,5; marker-end: url(#arrowhead-gray); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34495e"/>
+    </marker>
+    <marker id="arrowhead-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e17055"/>
+    </marker>
+    <marker id="arrowhead-gray" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7f8c8d"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="500" y="30" text-anchor="middle" class="title-text">AWQ 量化算法结构图</text>
+  <text x="500" y="50" text-anchor="middle" class="english-text">(Activation-aware Weight Quantization)</text>
+
+  <!-- Input Data -->
+  <rect x="50" y="80" width="140" height="60" class="input-box" rx="5"/>
+  <text x="120" y="105" text-anchor="middle" class="section-text">校准数据</text>
+  <text x="120" y="125" text-anchor="middle" class="english-text">Calibration Data</text>
+
+  <!-- Activation Analysis -->
+  <rect x="250" y="80" width="160" height="60" class="process-box" rx="5"/>
+  <text x="330" y="105" text-anchor="middle" class="section-text">激活值分析</text>
+  <text x="330" y="125" text-anchor="middle" class="formula-text">X = {x₁, x₂, ..., xₙ}</text>
+
+  <!-- Salient Weight Detection -->
+  <rect x="470" y="80" width="180" height="60" class="important-box" rx="5"/>
+  <text x="560" y="105" text-anchor="middle" class="section-text">显著权重识别</text>
+  <text x="560" y="125" text-anchor="middle" class="english-text">Salient Weight Detection</text>
+
+  <!-- Original Weights -->
+  <rect x="720" y="80" width="140" height="60" class="input-box" rx="5"/>
+  <text x="790" y="105" text-anchor="middle" class="section-text">原始权重</text>
+  <text x="790" y="125" text-anchor="middle" class="formula-text">W ∈ R^(n×m)</text>
+
+  <!-- Channel Importance -->
+  <rect x="150" y="200" width="180" height="80" class="process-box" rx="5"/>
+  <text x="240" y="225" text-anchor="middle" class="section-text">通道重要性评估</text>
+  <text x="240" y="245" text-anchor="middle" class="english-text">Channel Importance</text>
+  <text x="240" y="265" text-anchor="middle" class="formula-text">I_c = Σ|W_c · X_c|</text>
+
+  <!-- Scaling Factor Computation -->
+  <rect x="400" y="200" width="200" height="80" class="important-box" rx="5"/>
+  <text x="500" y="220" text-anchor="middle" class="section-text">缩放因子计算</text>
+  <text x="500" y="240" text-anchor="middle" class="english-text">Scaling Factor</text>
+  <text x="500" y="255" text-anchor="middle" class="formula-text">s = max(|W|) / Q_max</text>
+  <text x="500" y="270" text-anchor="middle" class="formula-text">per-channel basis</text>
+
+  <!-- Weight Protection -->
+  <rect x="670" y="200" width="180" height="80" class="important-box" rx="5"/>
+  <text x="760" y="225" text-anchor="middle" class="section-text">权重保护策略</text>
+  <text x="760" y="245" text-anchor="middle" class="english-text">Weight Protection</text>
+  <text x="760" y="265" text-anchor="middle" class="formula-text">W' = W × s</text>
+
+  <!-- Quantization Process -->
+  <rect x="250" y="340" width="160" height="60" class="process-box" rx="5"/>
+  <text x="330" y="365" text-anchor="middle" class="section-text">统一量化</text>
+  <text x="330" y="385" text-anchor="middle" class="formula-text">W_q = Round(W'/Q)</text>
+
+  <!-- Activation Scaling -->
+  <rect x="470" y="340" width="180" height="60" class="process-box" rx="5"/>
+  <text x="560" y="365" text-anchor="middle" class="section-text">激活值缩放</text>
+  <text x="560" y="385" text-anchor="middle" class="formula-text">X' = X / s</text>
+
+  <!-- Final Computation -->
+  <rect x="350" y="460" width="200" height="60" class="output-box" rx="5"/>
+  <text x="450" y="485" text-anchor="middle" class="section-text">最终计算</text>
+  <text x="450" y="505" text-anchor="middle" class="formula-text">Y = X' × W_q ≈ X × W</text>
+
+  <!-- Performance Metrics -->
+  <rect x="80" y="560" width="180" height="100" class="process-box" rx="5"/>
+  <text x="170" y="585" text-anchor="middle" class="section-text">性能特点</text>
+  <text x="170" y="605" text-anchor="middle" class="english-text">• Hardware-friendly</text>
+  <text x="170" y="625" text-anchor="middle" class="english-text">• Fast inference</text>
+  <text x="170" y="645" text-anchor="middle" class="english-text">• Multi-modal support</text>
+
+  <!-- Key Innovation -->
+  <rect x="320" y="560" width="220" height="100" class="important-box" rx="5"/>
+  <text x="430" y="585" text-anchor="middle" class="section-text">核心创新</text>
+  <text x="430" y="605" text-anchor="middle" class="english-text">Activation-aware Protection</text>
+  <text x="430" y="625" text-anchor="middle" class="formula-text">保护显著权重通道</text>
+  <text x="430" y="645" text-anchor="middle" class="formula-text">Minimize quantization error</text>
+
+  <!-- Advantages -->
+  <rect x="600" y="560" width="180" height="100" class="output-box" rx="5"/>
+  <text x="690" y="585" text-anchor="middle" class="section-text">算法优势</text>
+  <text x="690" y="605" text-anchor="middle" class="english-text">• Better accuracy</text>
+  <text x="690" y="625" text-anchor="middle" class="english-text">• Efficient deployment</text>
+  <text x="690" y="645" text-anchor="middle" class="english-text">• Easy to implement</text>
+
+  <!-- Main flow arrows -->
+  <line x1="190" y1="110" x2="250" y2="110" class="arrow"/>
+  <line x1="410" y1="110" x2="470" y2="110" class="arrow"/>
+  <line x1="650" y1="110" x2="720" y2="110" class="arrow"/>
+  
+  <line x1="330" y1="140" x2="240" y2="180" class="arrow"/>
+  <line x1="560"
