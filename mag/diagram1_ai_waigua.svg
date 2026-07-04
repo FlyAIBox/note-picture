@@ -1,0 +1,74 @@
+<svg viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="800" y="70" text-anchor="middle" font-family="SimSun, serif" font-size="40" font-weight="bold" fill="#333333">AI 外挂体系结构图</text>
+  <text x="800" y="108" text-anchor="middle" font-family="SimSun, serif" font-size="22" fill="#888888">个人与企业的能力延伸方式</text>
+
+  <!-- Central node -->
+  <rect x="650" y="150" width="300" height="80" rx="12" fill="#D2D2E0" stroke="#8A8AAE" stroke-width="2"/>
+  <text x="800" y="198" text-anchor="middle" font-family="SimSun, serif" font-size="30" font-weight="bold" fill="#333333">AI 外挂</text>
+
+  <!-- Lines down to two columns -->
+  <line x1="800" y1="230" x2="800" y2="270" stroke="#999999" stroke-width="2"/>
+  <line x1="450" y1="270" x2="1150" y2="270" stroke="#999999" stroke-width="2"/>
+  <line x1="450" y1="270" x2="450" y2="300" stroke="#999999" stroke-width="2"/>
+  <line x1="1150" y1="270" x2="1150" y2="300" stroke="#999999" stroke-width="2"/>
+
+  <!-- Left column: 个人AI外挂 -->
+  <rect x="180" y="300" width="540" height="60" rx="10" fill="#C4DCE6" stroke="#5C90A8" stroke-width="2"/>
+  <text x="450" y="340" text-anchor="middle" font-family="SimSun, serif" font-size="26" font-weight="bold" fill="#333333">个人 AI 外挂</text>
+
+  <!-- Right column: 企业AI外挂 -->
+  <rect x="880" y="300" width="540" height="60" rx="10" fill="#FFBFBF" stroke="#C97878" stroke-width="2"/>
+  <text x="1150" y="340" text-anchor="middle" font-family="SimSun, serif" font-size="26" font-weight="bold" fill="#333333">企业 AI 外挂</text>
+
+  <!-- Individual items -->
+  <g font-family="SimSun, serif" font-size="22" fill="#333333">
+    <rect x="180" y="400" width="240" height="70" rx="8" fill="#C4DCE6" opacity="0.6" stroke="#5C90A8"/>
+    <text x="300" y="443" text-anchor="middle">写作外挂</text>
+
+    <rect x="440" y="400" width="240" height="70" rx="8" fill="#C4DCE6" opacity="0.6" stroke="#5C90A8"/>
+    <text x="560" y="443" text-anchor="middle">编程外挂</text>
+
+    <rect x="180" y="490" width="240" height="70" rx="8" fill="#C4DCE6" opacity="0.6" stroke="#5C90A8"/>
+    <text x="300" y="533" text-anchor="middle">设计外挂</text>
+
+    <rect x="440" y="490" width="240" height="70" rx="8" fill="#C4DCE6" opacity="0.6" stroke="#5C90A8"/>
+    <text x="560" y="533" text-anchor="middle">销售外挂</text>
+
+    <rect x="310" y="580" width="240" height="70" rx="8" fill="#C4DCE6" opacity="0.6" stroke="#5C90A8"/>
+    <text x="430" y="623" text-anchor="middle">管理外挂</text>
+  </g>
+
+  <!-- Enterprise items -->
+  <g font-family="SimSun, serif" font-size="22" fill="#333333">
+    <rect x="880" y="400" width="240" height="70" rx="8" fill="#FFBFBF" opacity="0.6" stroke="#C97878"/>
+    <text x="1000" y="443" text-anchor="middle">研发外挂</text>
+
+    <rect x="1140" y="400" width="240" height="70" rx="8" fill="#FFBFBF" opacity="0.6" stroke="#C97878"/>
+    <text x="1260" y="443" text-anchor="middle">客服外挂</text>
+
+    <rect x="880" y="490" width="240" height="70" rx="8" fill="#FFBFBF" opacity="0.6" stroke="#C97878"/>
+    <text x="1000" y="533" text-anchor="middle">营销外挂</text>
+
+    <rect x="1140" y="490" width="240" height="70" rx="8" fill="#FFBFBF" opacity="0.6" stroke="#C97878"/>
+    <text x="1260" y="533" text-anchor="middle">数据分析外挂</text>
+
+    <rect x="1010" y="580" width="240" height="70" rx="8" fill="#FFBFBF" opacity="0.6" stroke="#C97878"/>
+    <text x="1130" y="623" text-anchor="middle">经营决策外挂</text>
+  </g>
+
+  <!-- Connector lines from column headers to items -->
+  <line x1="450" y1="360" x2="450" y2="400" stroke="#999999" stroke-width="1.5"/>
+  <line x1="1150" y1="360" x2="1150" y2="400" stroke="#999999" stroke-width="1.5"/>
+
+  <!-- Bottom conclusion -->
+  <line x1="800" y1="670" x2="800" y2="710" stroke="#999999" stroke-width="2"/>
+  <rect x="330" y="710" width="940" height="110" rx="12" fill="#E0E4CC" stroke="#8A9A5B" stroke-width="2"/>
+  <text x="800" y="750" text-anchor="middle" font-family="SimSun, serif" font-size="24" font-weight="bold" fill="#333333">结论：AI 不是工具升级，而是生产力结构的迁移</text>
+  <text x="800" y="788" text-anchor="middle" font-family="SimSun, serif" font-size="20" fill="#555555">每个人、每个企业都会拥有多个外挂，进而演化为"新物种"</text>
+
+  <!-- Citation -->
+  <text x="800" y="865" text-anchor="middle" font-family="SimSun, serif" font-size="18" fill="#999999">—— 许式伟《AI 时代，企业要学会重新想象自己》</text>
+</svg>
