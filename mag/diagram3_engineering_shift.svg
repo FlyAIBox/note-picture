@@ -1,0 +1,63 @@
+<svg viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="800" y="70" text-anchor="middle" font-family="SimSun, serif" font-size="40" font-weight="bold" fill="#333333">软件工程范式重构对比图</text>
+  <text x="800" y="108" text-anchor="middle" font-family="SimSun, serif" font-size="22" fill="#888888">从"人月"度量到"评估函数"度量</text>
+
+  <!-- Left column header: 传统软件工程 -->
+  <rect x="110" y="150" width="620" height="64" rx="10" fill="#C4DCE6" stroke="#5C90A8" stroke-width="2"/>
+  <text x="420" y="192" text-anchor="middle" font-family="SimSun, serif" font-size="27" font-weight="bold" fill="#333333">传统软件工程</text>
+
+  <!-- Right column header: AI原生软件工程 -->
+  <rect x="870" y="150" width="620" height="64" rx="10" fill="#D2D2E0" stroke="#8A8AAE" stroke-width="2"/>
+  <text x="1180" y="192" text-anchor="middle" font-family="SimSun, serif" font-size="27" font-weight="bold" fill="#333333">AI 原生软件工程</text>
+
+  <!-- Row 1: 度量单位 -->
+  <rect x="110" y="240" width="620" height="90" rx="8" fill="#C4DCE6" opacity="0.55" stroke="#5C90A8"/>
+  <text x="420" y="272" text-anchor="middle" font-family="SimSun, serif" font-size="20" font-weight="bold" fill="#333333">度量单位</text>
+  <text x="420" y="304" text-anchor="middle" font-family="SimSun, serif" font-size="22" fill="#333333">人月</text>
+
+  <rect x="870" y="240" width="620" height="90" rx="8" fill="#D2D2E0" opacity="0.55" stroke="#8A8AAE"/>
+  <text x="1180" y="272" text-anchor="middle" font-family="SimSun, serif" font-size="20" font-weight="bold" fill="#333333">度量单位</text>
+  <text x="1180" y="304" text-anchor="middle" font-family="SimSun, serif" font-size="22" fill="#333333">评估函数（单元测试覆盖率）</text>
+
+  <!-- Row 2: 交付物 -->
+  <rect x="110" y="345" width="620" height="90" rx="8" fill="#C4DCE6" opacity="0.55" stroke="#5C90A8"/>
+  <text x="420" y="377" text-anchor="middle" font-family="SimSun, serif" font-size="20" font-weight="bold" fill="#333333">产品交付物</text>
+  <text x="420" y="409" text-anchor="middle" font-family="SimSun, serif" font-size="22" fill="#333333">静态原型图</text>
+
+  <rect x="870" y="345" width="620" height="90" rx="8" fill="#D2D2E0" opacity="0.55" stroke="#8A8AAE"/>
+  <text x="1180" y="377" text-anchor="middle" font-family="SimSun, serif" font-size="20" font-weight="bold" fill="#333333">产品交付物</text>
+  <text x="1180" y="409" text-anchor="middle" font-family="SimSun, serif" font-size="22" fill="#333333">Live Demo（无歧义共识）</text>
+
+  <!-- Row 3: 效率瓶颈 -->
+  <rect x="110" y="450" width="620" height="90" rx="8" fill="#C4DCE6" opacity="0.55" stroke="#5C90A8"/>
+  <text x="420" y="482" text-anchor="middle" font-family="SimSun, serif" font-size="20" font-weight="bold" fill="#333333">效率瓶颈</text>
+  <text x="420" y="514" text-anchor="middle" font-family="SimSun, serif" font-size="22" fill="#333333">代码编写环节</text>
+
+  <rect x="870" y="450" width="620" height="90" rx="8" fill="#D2D2E0" opacity="0.55" stroke="#8A8AAE"/>
+  <text x="1180" y="482" text-anchor="middle" font-family="SimSun, serif" font-size="20" font-weight="bold" fill="#333333">效率瓶颈</text>
+  <text x="1180" y="514" text-anchor="middle" font-family="SimSun, serif" font-size="22" fill="#333333">产品定义、架构设计、协作链路</text>
+
+  <!-- Row 4: 核心角色 -->
+  <rect x="110" y="555" width="620" height="90" rx="8" fill="#C4DCE6" opacity="0.55" stroke="#5C90A8"/>
+  <text x="420" y="587" text-anchor="middle" font-family="SimSun, serif" font-size="20" font-weight="bold" fill="#333333">核心角色</text>
+  <text x="420" y="619" text-anchor="middle" font-family="SimSun, serif" font-size="22" fill="#333333">程序员（代码生产者）</text>
+
+  <rect x="870" y="555" width="620" height="90" rx="8" fill="#D2D2E0" opacity="0.55" stroke="#8A8AAE"/>
+  <text x="1180" y="587" text-anchor="middle" font-family="SimSun, serif" font-size="20" font-weight="bold" fill="#333333">核心角色</text>
+  <text x="1180" y="619" text-anchor="middle" font-family="SimSun, serif" font-size="22" fill="#333333">X Engineer（产品架构师）</text>
+
+  <!-- Center arrow -->
+  <polygon points="730,390 830,390 830,375 870,405 830,435 830,420 730,420" fill="#FBE7A6" stroke="#C9A227" stroke-width="1.5"/>
+  <text x="800" y="360" text-anchor="middle" font-family="SimSun, serif" font-size="18" fill="#8A6D00">重构</text>
+
+  <!-- Bottom note -->
+  <rect x="230" y="675" width="1140" height="100" rx="12" fill="#FBE7A6" stroke="#C9A227" stroke-width="2"/>
+  <text x="800" y="712" text-anchor="middle" font-family="SimSun, serif" font-size="23" font-weight="bold" fill="#333333">AI Coding 不是 L5 级自动驾驶，而更像"自动挡"</text>
+  <text x="800" y="746" text-anchor="middle" font-family="SimSun, serif" font-size="19" fill="#555555">负责方向、质量与结果的，仍然是人</text>
+
+  <!-- Citation -->
+  <text x="800" y="845" text-anchor="middle" font-family="SimSun, serif" font-size="18" fill="#999999">—— 许式伟《AI 时代，企业要学会重新想象自己》</text>
+</svg>
