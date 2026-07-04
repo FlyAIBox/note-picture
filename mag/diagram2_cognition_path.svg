@@ -1,0 +1,57 @@
+<svg viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="800" y="70" text-anchor="middle" font-family="SimSun, serif" font-size="40" font-weight="bold" fill="#333333">企业 AI 基础设施认知升级路径</text>
+  <text x="800" y="108" text-anchor="middle" font-family="SimSun, serif" font-size="22" fill="#888888">从"不敢用"到"高价值场景"的四个阶段</text>
+
+  <!-- Stage boxes -->
+  <!-- Stage 0 -->
+  <rect x="60" y="200" width="290" height="130" rx="12" fill="#FFFFFF" stroke="#AAAAAA" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="205" y="250" text-anchor="middle" font-family="SimSun, serif" font-size="24" font-weight="bold" fill="#666666">认知起点</text>
+  <text x="205" y="285" text-anchor="middle" font-family="SimSun, serif" font-size="20" fill="#666666">不敢用 Token</text>
+  <text x="205" y="312" text-anchor="middle" font-family="SimSun, serif" font-size="18" fill="#999999">停留在旧物种工作方式</text>
+
+  <!-- Arrow -->
+  <polygon points="360,265 400,265 400,255 420,265 400,275 400,265" fill="#999999"/>
+
+  <!-- Stage 1 -->
+  <rect x="430" y="200" width="290" height="130" rx="12" fill="#FBE7A6" stroke="#C9A227" stroke-width="2"/>
+  <text x="575" y="245" text-anchor="middle" font-family="SimSun, serif" font-size="22" font-weight="bold" fill="#333333">阶段一</text>
+  <text x="575" y="278" text-anchor="middle" font-family="SimSun, serif" font-size="22" fill="#333333">敢用 Token</text>
+  <text x="575" y="308" text-anchor="middle" font-family="SimSun, serif" font-size="17" fill="#555555">Token 用量即智能化水平</text>
+
+  <polygon points="730,265 770,265 770,255 790,265 770,275 770,265" fill="#999999"/>
+
+  <!-- Stage 2 -->
+  <rect x="800" y="200" width="290" height="130" rx="12" fill="#FFBFBF" stroke="#C97878" stroke-width="2"/>
+  <text x="945" y="245" text-anchor="middle" font-family="SimSun, serif" font-size="22" font-weight="bold" fill="#333333">阶段二</text>
+  <text x="945" y="278" text-anchor="middle" font-family="SimSun, serif" font-size="22" fill="#333333">敢用贵模型</text>
+  <text x="945" y="308" text-anchor="middle" font-family="SimSun, serif" font-size="17" fill="#555555">贵是敢做高价值事情的信号</text>
+
+  <polygon points="1100,265 1140,265 1140,255 1160,265 1140,275 1140,265" fill="#999999"/>
+
+  <!-- Stage 3 -->
+  <rect x="1170" y="200" width="330" height="130" rx="12" fill="#E0E4CC" stroke="#8A9A5B" stroke-width="2"/>
+  <text x="1335" y="245" text-anchor="middle" font-family="SimSun, serif" font-size="22" font-weight="bold" fill="#333333">阶段三</text>
+  <text x="1335" y="278" text-anchor="middle" font-family="SimSun, serif" font-size="22" fill="#333333">高价值场景验证</text>
+  <text x="1335" y="308" text-anchor="middle" font-family="SimSun, serif" font-size="17" fill="#555555">效率倍增、能力项而非成本项</text>
+
+  <!-- Down arrow to stage 4 -->
+  <polygon points="1335,330 1335,370 1325,370 1335,390 1345,370 1335,370" fill="#999999"/>
+
+  <!-- Stage 4 -->
+  <rect x="1080" y="400" width="420" height="130" rx="12" fill="#C4DCE6" stroke="#5C90A8" stroke-width="2"/>
+  <text x="1290" y="445" text-anchor="middle" font-family="SimSun, serif" font-size="22" font-weight="bold" fill="#333333">阶段四</text>
+  <text x="1290" y="478" text-anchor="middle" font-family="SimSun, serif" font-size="22" fill="#333333">ROI 优化与成本结构管理</text>
+  <text x="1290" y="508" text-anchor="middle" font-family="SimSun, serif" font-size="17" fill="#555555">回归 Token 消耗与业务结果的关系</text>
+
+  <!-- Principle banner -->
+  <rect x="130" y="600" width="1340" height="150" rx="14" fill="#D2D2E0" stroke="#8A8AAE" stroke-width="2"/>
+  <text x="800" y="650" text-anchor="middle" font-family="SimSun, serif" font-size="26" font-weight="bold" fill="#333333">核心原则</text>
+  <text x="800" y="695" text-anchor="middle" font-family="SimSun, serif" font-size="23" fill="#333333">先敢于使用，再学会计量；</text>
+  <text x="800" y="730" text-anchor="middle" font-family="SimSun, serif" font-size="23" fill="#333333">先进入新范式，再优化成本结构</text>
+
+  <!-- Citation -->
+  <text x="800" y="810" text-anchor="middle" font-family="SimSun, serif" font-size="18" fill="#999999">—— 许式伟《AI 时代，企业要学会重新想象自己》</text>
+</svg>
