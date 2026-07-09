@@ -1,0 +1,24 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="450" fill="#FFFFFF"/>
+  <text x="400" y="42" font-family="SimSun, 宋体" font-size="24" font-weight="bold" fill="#1B2A4A" text-anchor="middle">从"定时检查"到"无人值守":主动式循环的四层叠加</text>
+
+  <rect x="70" y="330" width="660" height="70" rx="10" fill="#FBE7A6"/>
+  <text x="95" y="358" font-family="SimSun, 宋体" font-size="15" font-weight="bold" fill="#1B2A4A">① 触发层</text>
+  <text x="95" y="380" font-family="Times New Roman" font-size="12" fill="#1B2A4A">/schedule —— 按小时/天等间隔，或按事件唤醒例行程序</text>
+
+  <rect x="110" y="255" width="580" height="70" rx="10" fill="#FFBFBF"/>
+  <text x="135" y="283" font-family="SimSun, 宋体" font-size="15" font-weight="bold" fill="#1B2A4A">② 目标层</text>
+  <text x="135" y="305" font-family="Times New Roman" font-size="12" fill="#1B2A4A">/goal + skills —— 定义"做完"的标准，并写明如何自我验证</text>
+
+  <rect x="150" y="180" width="500" height="70" rx="10" fill="#C4DCE6"/>
+  <text x="175" y="208" font-family="SimSun, 宋体" font-size="15" font-weight="bold" fill="#1B2A4A">③ 编排层</text>
+  <text x="175" y="230" font-family="SimSun, 宋体" font-size="12" fill="#1B2A4A">Dynamic Workflows —— 分诊、并行修复、交叉审查</text>
+
+  <rect x="190" y="105" width="420" height="70" rx="10" fill="#E0E4CC"/>
+  <text x="215" y="133" font-family="SimSun, 宋体" font-size="15" font-weight="bold" fill="#1B2A4A">④ 执行层</text>
+  <text x="215" y="155" font-family="SimSun, 宋体" font-size="12" fill="#1B2A4A">Auto Mode —— 无需人工确认权限，持续无人值守运行</text>
+
+  <path d="M 400 175 L 400 178" stroke="#8C8C8C" stroke-width="2"/>
+
+  <text x="400" y="425" font-family="SimSun, 宋体" font-size="12" fill="#7A7A7A" text-anchor="middle">四层从外到内依次叠加，共同构成一条无人值守的处理流水线</text>
+</svg>
