@@ -1,0 +1,79 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="450" fill="#FFFFFF"/>
+  <text x="400" y="38" font-family="SimSun, 宋体" font-size="24" font-weight="bold" fill="#1B2A4A" text-anchor="middle">四种循环速查表</text>
+
+  <rect x="40" y="60" width="150" height="44" fill="#1B2A4A"/>
+  <rect x="190" y="60" width="140" height="44" fill="#1B2A4A"/>
+  <rect x="330" y="60" width="150" height="44" fill="#1B2A4A"/>
+  <rect x="480" y="60" width="140" height="44" fill="#1B2A4A"/>
+  <rect x="620" y="60" width="140" height="44" fill="#1B2A4A"/>
+  <text x="115" y="87" font-family="SimSun, 宋体" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">类型</text>
+  <text x="260" y="87" font-family="SimSun, 宋体" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">交出的是</text>
+  <text x="405" y="87" font-family="SimSun, 宋体" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">适用场景</text>
+  <text x="550" y="87" font-family="SimSun, 宋体" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">对应工具</text>
+  <text x="690" y="87" font-family="SimSun, 宋体" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">风险点</text>
+
+  <rect x="40" y="104" width="150" height="72" fill="#C4DCE6"/>
+  <rect x="190" y="104" width="140" height="72" fill="#EAF2F5"/>
+  <rect x="330" y="104" width="150" height="72" fill="#EAF2F5"/>
+  <rect x="480" y="104" width="140" height="72" fill="#EAF2F5"/>
+  <rect x="620" y="104" width="140" height="72" fill="#EAF2F5"/>
+  <text x="115" y="146" font-family="SimSun, 宋体" font-size="13" font-weight="bold" fill="#1B2A4A" text-anchor="middle">回合制</text>
+  <text x="260" y="136" font-family="SimSun, 宋体" font-size="12" fill="#333333" text-anchor="middle">验证环节</text>
+  <text x="405" y="136" font-family="SimSun, 宋体" font-size="12" fill="#333333" text-anchor="middle">探索中/决策中</text>
+  <text x="550" y="136" font-family="SimSun, 宋体" font-size="12" fill="#333333" text-anchor="middle">自定义验证 Skill</text>
+  <text x="690" y="130" font-family="SimSun, 宋体" font-size="12" fill="#333333" text-anchor="middle">依赖人工</text>
+  <text x="690" y="150" font-family="SimSun, 宋体" font-size="12" fill="#333333" text-anchor="middle">逐轮把关</text>
+
+  <rect x="40" y="176" width="150" height="72" fill="#FFBFBF"/>
+  <rect x="190" y="176" width="140" height="72" fill="#FFF3F3"/>
+  <rect x="330" y="176" width="150" height="72" fill="#FFF3F3"/>
+  <rect x="480" y="176" width="140" height="72" fill="#FFF3F3"/>
+  <rect x="620" y="176" width="140" height="72" fill="#FFF3F3"/>
+  <text x="115" y="218" font-family="SimSun, 宋体" font-size="13" font-weight="bold" fill="#1B2A4A" text-anchor="middle">目标制</text>
+  <text x="260" y="208" font-family="SimSun, 宋体" font-size="12" fill="#333333" text-anchor="middle">停止条件</text>
+  <text x="405" y="208" font-family="SimSun, 宋体" font-size="12" fill="#333333" text-anchor="middle">已知"做完"是什么样</text>
+  <text x="550" y="208" font-family="Times New Roman" font-size="12" fill="#333333" text-anchor="middle">/goal</text>
+  <text x="690" y="202" font-family="SimSun, 宋体" font-size="12" fill="#333333" text-anchor="middle">标准不够</text>
+  <text x="690" y="222" font-family="SimSun, 宋体" font-size="12" fill="#333333" text-anchor="middle">量化则失效</text>
+
+  <rect x="40" y="248" width="150" height="72" fill="#E0E4CC"/>
+  <rect x="190" y="248" width="140" height="72" fill="#F5F7EF"/>
+  <rect x="330" y="248" width="150" height="72" fill="#F5F7EF"/>
+  <rect x="480" y="248" width="140" height="72" fill="#F5F7EF"/>
+  <rect x="620" y="248" width="140" height="72" fill="#F5F7EF"/>
+  <text x="115" y="290" font-family="SimSun, 宋体" font-size="13" font-weight="bold" fill="#1B2A4A" text-anchor="middle">时间制</text>
+  <text x="260" y="280" font-family="SimSun, 宋体" font-size="12" fill="#333333" text-anchor="middle">触发时机</text>
+  <text x="405" y="280" font-family="SimSun, 宋体" font-size="12" fill="#333333" text-anchor="middle">工作在项目之外</text>
+  <text x="405" y="298" font-family="SimSun, 宋体" font-size="12" fill="#333333" text-anchor="middle">按计划发生</text>
+  <text x="550" y="280" font-family="Times New Roman" font-size="12" fill="#333333" text-anchor="middle">/loop /schedule</text>
+  <text x="690" y="274" font-family="SimSun, 宋体" font-size="12" fill="#333333" text-anchor="middle">间隔过密</text>
+  <text x="690" y="294" font-family="SimSun, 宋体" font-size="12" fill="#333333" text-anchor="middle">浪费token</text>
+
+  <rect x="40" y="320" width="150" height="72" fill="#FBE7A6"/>
+  <rect x="190" y="320" width="140" height="72" fill="#FFFBF0"/>
+  <rect x="330" y="320" width="150" height="72" fill="#FFFBF0"/>
+  <rect x="480" y="320" width="140" height="72" fill="#FFFBF0"/>
+  <rect x="620" y="320" width="140" height="72" fill="#FFFBF0"/>
+  <text x="115" y="362" font-family="SimSun, 宋体" font-size="13" font-weight="bold" fill="#1B2A4A" text-anchor="middle">主动式</text>
+  <text x="260" y="352" font-family="SimSun, 宋体" font-size="12" fill="#333333" text-anchor="middle">提示词本身</text>
+  <text x="405" y="352" font-family="SimSun, 宋体" font-size="12" fill="#333333" text-anchor="middle">规模化、定义清晰</text>
+  <text x="405" y="370" font-family="SimSun, 宋体" font-size="12" fill="#333333" text-anchor="middle">的重复工作</text>
+  <text x="550" y="352" font-family="SimSun, 宋体" font-size="12" fill="#333333" text-anchor="middle">以上全部+工作流编排</text>
+  <text x="690" y="346" font-family="SimSun, 宋体" font-size="12" fill="#333333" text-anchor="middle">失控成本</text>
+  <text x="690" y="366" font-family="SimSun, 宋体" font-size="12" fill="#333333" text-anchor="middle">最高，需分级</text>
+
+  <g stroke="#B0B0B0" stroke-width="1" fill="none">
+    <rect x="40" y="60" width="720" height="332"/>
+    <line x1="190" y1="60" x2="190" y2="392"/>
+    <line x1="330" y1="60" x2="330" y2="392"/>
+    <line x1="480" y1="60" x2="480" y2="392"/>
+    <line x1="620" y1="60" x2="620" y2="392"/>
+    <line x1="40" y1="104" x2="760" y2="104"/>
+    <line x1="40" y1="176" x2="760" y2="176"/>
+    <line x1="40" y1="248" x2="760" y2="248"/>
+    <line x1="40" y1="320" x2="760" y2="320"/>
+  </g>
+
+  <text x="400" y="420" font-family="SimSun, 宋体" font-size="12" fill="#7A7A7A" text-anchor="middle">先从最简单的循环开始，逐级升级，而不是一上来就追求"全自动"</text>
+</svg>
