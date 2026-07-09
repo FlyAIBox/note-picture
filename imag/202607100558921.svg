@@ -1,0 +1,73 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="450" fill="#FFFFFF"/>
+  <text x="400" y="42" font-family="SimSun, 宋体" font-size="24" font-weight="bold" fill="#1B2A4A" text-anchor="middle">四种 Agent Loop 类型总览</text>
+  <text x="400" y="66" font-family="Times New Roman" font-size="14" fill="#7A7A7A" text-anchor="middle">Turn-based → Goal-based → Time-based → Proactive</text>
+  <rect x="30" y="95" width="160" height="80" rx="10" fill="#C4DCE6"/>
+  <text x="110" y="130" font-family="SimSun, 宋体" font-size="17" font-weight="bold" fill="#1B2A4A" text-anchor="middle">回合制循环</text>
+  <text x="110" y="153" font-family="Times New Roman" font-size="13" fill="#1B2A4A" text-anchor="middle">Turn-based</text>
+
+  <rect x="220" y="95" width="160" height="80" rx="10" fill="#FFBFBF"/>
+  <text x="300" y="130" font-family="SimSun, 宋体" font-size="17" font-weight="bold" fill="#1B2A4A" text-anchor="middle">目标制循环</text>
+  <text x="300" y="153" font-family="Times New Roman" font-size="13" fill="#1B2A4A" text-anchor="middle">Goal-based /goal</text>
+
+  <rect x="410" y="95" width="160" height="80" rx="10" fill="#E0E4CC"/>
+  <text x="490" y="130" font-family="SimSun, 宋体" font-size="17" font-weight="bold" fill="#1B2A4A" text-anchor="middle">时间制循环</text>
+  <text x="490" y="153" font-family="Times New Roman" font-size="13" fill="#1B2A4A" text-anchor="middle">Time-based /loop</text>
+
+  <rect x="600" y="95" width="170" height="80" rx="10" fill="#FBE7A6"/>
+  <text x="685" y="130" font-family="SimSun, 宋体" font-size="17" font-weight="bold" fill="#1B2A4A" text-anchor="middle">主动式循环</text>
+  <text x="685" y="153" font-family="Times New Roman" font-size="13" fill="#1B2A4A" text-anchor="middle">Proactive</text>
+
+  <path d="M 190 135 L 217 135" stroke="#D2D2E0" stroke-width="3" marker-end="url(#ah1)"/>
+  <path d="M 380 135 L 407 135" stroke="#D2D2E0" stroke-width="3" marker-end="url(#ah1)"/>
+  <path d="M 570 135 L 597 135" stroke="#D2D2E0" stroke-width="3" marker-end="url(#ah1)"/>
+  <defs>
+    <marker id="ah1" markerWidth="9" markerHeight="9" refX="5" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#D2D2E0"/>
+    </marker>
+  </defs>
+
+  <rect x="30" y="200" width="160" height="220" rx="8" fill="#F7FAFB" stroke="#C4DCE6" stroke-width="1.5"/>
+  <text x="45" y="228" font-family="SimSun, 宋体" font-size="13" font-weight="bold" fill="#1B2A4A">触发</text>
+  <text x="45" y="248" font-family="SimSun, 宋体" font-size="12" fill="#333333">用户输入一次提示词</text>
+  <text x="45" y="278" font-family="SimSun, 宋体" font-size="13" font-weight="bold" fill="#1B2A4A">停止</text>
+  <text x="45" y="298" font-family="SimSun, 宋体" font-size="12" fill="#333333">Claude 判断任务完成</text>
+  <text x="45" y="316" font-family="SimSun, 宋体" font-size="12" fill="#333333">或需要更多上下文</text>
+  <text x="45" y="346" font-family="SimSun, 宋体" font-size="13" font-weight="bold" fill="#1B2A4A">适用</text>
+  <text x="45" y="366" font-family="SimSun, 宋体" font-size="12" fill="#333333">短任务、非常规流程</text>
+  <text x="45" y="396" font-family="SimSun, 宋体" font-size="13" font-weight="bold" fill="#1B2A4A">抓手</text>
+  <text x="45" y="410" font-family="SimSun, 宋体" font-size="12" fill="#333333">SKILL.md 自验证</text>
+
+  <rect x="220" y="200" width="160" height="220" rx="8" fill="#FFF7F7" stroke="#FFBFBF" stroke-width="1.5"/>
+  <text x="235" y="228" font-family="SimSun, 宋体" font-size="13" font-weight="bold" fill="#1B2A4A">触发</text>
+  <text x="235" y="248" font-family="SimSun, 宋体" font-size="12" fill="#333333">实时手动下发指令</text>
+  <text x="235" y="278" font-family="SimSun, 宋体" font-size="13" font-weight="bold" fill="#1B2A4A">停止</text>
+  <text x="235" y="298" font-family="SimSun, 宋体" font-size="12" fill="#333333">达成目标 或</text>
+  <text x="235" y="316" font-family="SimSun, 宋体" font-size="12" fill="#333333">达到最大轮次</text>
+  <text x="235" y="346" font-family="SimSun, 宋体" font-size="13" font-weight="bold" fill="#1B2A4A">适用</text>
+  <text x="235" y="366" font-family="SimSun, 宋体" font-size="12" fill="#333333">有可验证退出标准</text>
+  <text x="235" y="396" font-family="SimSun, 宋体" font-size="13" font-weight="bold" fill="#1B2A4A">抓手</text>
+  <text x="235" y="410" font-family="SimSun, 宋体" font-size="12" fill="#333333">明确完成标准+轮次上限</text>
+
+  <rect x="410" y="200" width="160" height="220" rx="8" fill="#FAFBF6" stroke="#E0E4CC" stroke-width="1.5"/>
+  <text x="425" y="228" font-family="SimSun, 宋体" font-size="13" font-weight="bold" fill="#1B2A4A">触发</text>
+  <text x="425" y="248" font-family="SimSun, 宋体" font-size="12" fill="#333333">按设定的时间间隔</text>
+  <text x="425" y="278" font-family="SimSun, 宋体" font-size="13" font-weight="bold" fill="#1B2A4A">停止</text>
+  <text x="425" y="298" font-family="SimSun, 宋体" font-size="12" fill="#333333">手动取消 或</text>
+  <text x="425" y="316" font-family="SimSun, 宋体" font-size="12" fill="#333333">工作本身完成</text>
+  <text x="425" y="346" font-family="SimSun, 宋体" font-size="13" font-weight="bold" fill="#1B2A4A">适用</text>
+  <text x="425" y="366" font-family="SimSun, 宋体" font-size="12" fill="#333333">周期性/对接外部系统</text>
+  <text x="425" y="396" font-family="SimSun, 宋体" font-size="13" font-weight="bold" fill="#1B2A4A">抓手</text>
+  <text x="425" y="410" font-family="SimSun, 宋体" font-size="12" fill="#333333">拉长间隔/事件触发</text>
+
+  <rect x="600" y="200" width="170" height="220" rx="8" fill="#FFFCF2" stroke="#FBE7A6" stroke-width="1.5"/>
+  <text x="615" y="228" font-family="SimSun, 宋体" font-size="13" font-weight="bold" fill="#1B2A4A">触发</text>
+  <text x="615" y="248" font-family="SimSun, 宋体" font-size="12" fill="#333333">事件或计划,无需人在场</text>
+  <text x="615" y="278" font-family="SimSun, 宋体" font-size="13" font-weight="bold" fill="#1B2A4A">停止</text>
+  <text x="615" y="298" font-family="SimSun, 宋体" font-size="12" fill="#333333">单任务达标即退出</text>
+  <text x="615" y="316" font-family="SimSun, 宋体" font-size="12" fill="#333333">例行程序持续运行</text>
+  <text x="615" y="346" font-family="SimSun, 宋体" font-size="13" font-weight="bold" fill="#1B2A4A">适用</text>
+  <text x="615" y="366" font-family="SimSun, 宋体" font-size="12" fill="#333333">规模化的规范化工作流</text>
+  <text x="615" y="396" font-family="SimSun, 宋体" font-size="13" font-weight="bold" fill="#1B2A4A">抓手</text>
+  <text x="615" y="410" font-family="SimSun, 宋体" font-size="12" fill="#333333">小模型路由+大模型判断</text>
+</svg>
