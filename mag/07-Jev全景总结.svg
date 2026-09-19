@@ -1,0 +1,31 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Jev 全景总结</title><desc id="desc">Jev 的定位、优势、边界、最佳分工与落地方法总结。</desc>
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <text x="70" y="72" font-family="SimSun,'Songti SC',serif" font-size="42" font-weight="700" fill="#20262C">Jev 全景总结</text>
+  <text x="72" y="112" font-family="'Times New Roman',SimSun,serif" font-size="22" fill="#59636C">A fast decision layer, not a smaller chatbot</text>
+  <rect x="60" y="155" width="360" height="205" rx="18" fill="#C4DCE6"/>
+  <text x="240" y="205" text-anchor="middle" font-family="SimSun,serif" font-size="27" font-weight="700" fill="#20262C">它是什么</text>
+  <text x="240" y="252" text-anchor="middle" font-family="SimSun,serif" font-size="21" fill="#37434C">System One 决策模型</text>
+  <text x="240" y="289" text-anchor="middle" font-family="SimSun,serif" font-size="21" fill="#37434C">输入状态与类型化问题</text>
+  <text x="240" y="326" text-anchor="middle" font-family="SimSun,serif" font-size="21" fill="#37434C">输出选择、分值与概率</text>
+  <rect x="460" y="155" width="360" height="205" rx="18" fill="#E0E4CC"/>
+  <text x="640" y="205" text-anchor="middle" font-family="SimSun,serif" font-size="27" font-weight="700" fill="#20262C">它擅长什么</text>
+  <text x="640" y="252" text-anchor="middle" font-family="SimSun,serif" font-size="21" fill="#37434C">高频路由 · 打分 · 粗筛</text>
+  <text x="640" y="289" text-anchor="middle" font-family="SimSun,serif" font-size="21" fill="#37434C">固定答案空间 · 延迟敏感</text>
+  <text x="640" y="326" text-anchor="middle" font-family="SimSun,serif" font-size="21" fill="#37434C">多问题一次并行判断</text>
+  <rect x="860" y="155" width="360" height="205" rx="18" fill="#FFBFBF"/>
+  <text x="1040" y="205" text-anchor="middle" font-family="SimSun,serif" font-size="27" font-weight="700" fill="#20262C">它不保证什么</text>
+  <text x="1040" y="252" text-anchor="middle" font-family="SimSun,serif" font-size="21" fill="#37434C">结构合法不等于判断正确</text>
+  <text x="1040" y="289" text-anchor="middle" font-family="SimSun,serif" font-size="21" fill="#37434C">不生成解释、代码或文章</text>
+  <text x="1040" y="326" text-anchor="middle" font-family="SimSun,serif" font-size="21" fill="#37434C">当前不支持多模态输入</text>
+  <rect x="60" y="400" width="560" height="185" rx="18" fill="#FBE7A6"/>
+  <text x="340" y="450" text-anchor="middle" font-family="SimSun,serif" font-size="27" font-weight="700" fill="#20262C">最佳分工</text>
+  <text x="340" y="498" text-anchor="middle" font-family="'Times New Roman',SimSun,serif" font-size="22" fill="#37434C">Jev 做判断 · LLM 做推理与生成</text>
+  <text x="340" y="538" text-anchor="middle" font-family="SimSun,serif" font-size="22" fill="#37434C">代码做动作 · 人类做高风险兜底</text>
+  <rect x="660" y="400" width="560" height="185" rx="18" fill="#D2D2E0"/>
+  <text x="940" y="450" text-anchor="middle" font-family="SimSun,serif" font-size="27" font-weight="700" fill="#20262C">落地起点</text>
+  <text x="940" y="498" text-anchor="middle" font-family="SimSun,serif" font-size="22" fill="#37434C">找出调用量最大的结构化判断链</text>
+  <text x="940" y="538" text-anchor="middle" font-family="SimSun,serif" font-size="22" fill="#37434C">用历史真值集评测，再小流量上线</text>
+  <rect x="60" y="625" width="1160" height="65" rx="14" fill="#E0E4CC"/>
+  <text x="640" y="666" text-anchor="middle" font-family="SimSun,serif" font-size="26" font-weight="700" fill="#20262C">真正的问题：你的 Agent 里，有多少调用其实根本不需要“生成”？</text>
+</svg>
