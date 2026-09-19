@@ -1,0 +1,29 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Jev 玩法地图</title><desc id="desc">Jev 可用于 Agent 路由、运营分流、质量检查、搜索重排、上下文治理与实时实验。</desc>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8A949C"/></marker></defs>
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <text x="70" y="72" font-family="SimSun,'Songti SC',serif" font-size="42" font-weight="700" fill="#20262C">一个只会选择的模型，能长出多少玩法？</text>
+  <text x="72" y="112" font-family="'Times New Roman',SimSun,serif" font-size="22" fill="#59636C">Where repeated judgment becomes a product surface</text>
+  <rect x="505" y="250" width="270" height="180" rx="90" fill="#D2D2E0"/>
+  <text x="640" y="320" text-anchor="middle" font-family="'Times New Roman',serif" font-size="42" font-weight="700" fill="#20262C">Jev</text>
+  <text x="640" y="362" text-anchor="middle" font-family="SimSun,serif" font-size="24" fill="#37434C">高频语义判断</text>
+  <text x="640" y="398" text-anchor="middle" font-family="SimSun,serif" font-size="20" fill="#59636C">快 · 便宜 · 结构化</text>
+  <g stroke="#8A949C" stroke-width="2.5" marker-end="url(#a)">
+    <line x1="520" y1="285" x2="342" y2="210"/><line x1="505" y1="340" x2="342" y2="340"/><line x1="520" y1="395" x2="342" y2="490"/>
+    <line x1="760" y1="285" x2="938" y2="210"/><line x1="775" y1="340" x2="938" y2="340"/><line x1="760" y1="395" x2="938" y2="490"/>
+  </g>
+  <rect x="60" y="150" width="285" height="120" rx="16" fill="#C4DCE6"/>
+  <text x="203" y="198" text-anchor="middle" font-family="SimSun,serif" font-size="25" font-weight="700" fill="#20262C">Agent 路由</text><text x="203" y="238" text-anchor="middle" font-family="SimSun,serif" font-size="20" fill="#37434C">工具 · 模型 · 下一步动作</text>
+  <rect x="60" y="290" width="285" height="120" rx="16" fill="#E0E4CC"/>
+  <text x="203" y="338" text-anchor="middle" font-family="SimSun,serif" font-size="25" font-weight="700" fill="#20262C">运营分流</text><text x="203" y="378" text-anchor="middle" font-family="SimSun,serif" font-size="20" fill="#37434C">客服 · 销售 · 审核队列</text>
+  <rect x="60" y="430" width="285" height="120" rx="16" fill="#FBE7A6"/>
+  <text x="203" y="478" text-anchor="middle" font-family="SimSun,serif" font-size="25" font-weight="700" fill="#20262C">质量与风险门</text><text x="203" y="518" text-anchor="middle" font-family="SimSun,serif" font-size="20" fill="#37434C">跑题 · 敏感 · 需不需要复核</text>
+  <rect x="935" y="150" width="285" height="120" rx="16" fill="#FFBFBF"/>
+  <text x="1078" y="198" text-anchor="middle" font-family="SimSun,serif" font-size="25" font-weight="700" fill="#20262C">搜索与评分</text><text x="1078" y="238" text-anchor="middle" font-family="SimSun,serif" font-size="20" fill="#37434C">重排 · 线索 · 告警优先级</text>
+  <rect x="935" y="290" width="285" height="120" rx="16" fill="#C4DCE6"/>
+  <text x="1078" y="338" text-anchor="middle" font-family="SimSun,serif" font-size="25" font-weight="700" fill="#20262C">上下文治理</text><text x="1078" y="378" text-anchor="middle" font-family="SimSun,serif" font-size="20" fill="#37434C">保留 · 降权 · 丢弃</text>
+  <rect x="935" y="430" width="285" height="120" rx="16" fill="#E0E4CC"/>
+  <text x="1078" y="478" text-anchor="middle" font-family="SimSun,serif" font-size="25" font-weight="700" fill="#20262C">实时实验</text><text x="1078" y="518" text-anchor="middle" font-family="SimSun,serif" font-size="20" fill="#37434C">游戏策略 · 仿真控制</text>
+  <rect x="60" y="610" width="1160" height="70" rx="14" fill="#D2D2E0"/>
+  <text x="640" y="654" text-anchor="middle" font-family="SimSun,serif" font-size="24" fill="#20262C">共同特征：答案空间已知、调用频率高、延迟敏感、允许代码或人工兜底</text>
+</svg>
