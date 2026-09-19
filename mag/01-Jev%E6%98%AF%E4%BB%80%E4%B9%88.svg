@@ -1,0 +1,26 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Jev 是什么</title><desc id="desc">状态和类型化问题进入 Jev，输出决策、概率分布与置信度，再由代码执行。</desc>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#3B4650"/></marker></defs>
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <text x="70" y="72" font-family="SimSun,'Songti SC',serif" font-size="42" font-weight="700" fill="#20262C">Jev 不是聊天机器人，而是软件的决策层</text>
+  <text x="72" y="112" font-family="'Times New Roman',SimSun,serif" font-size="22" fill="#59636C">System One model · typed decisions for software</text>
+  <rect x="70" y="180" width="280" height="180" rx="18" fill="#C4DCE6"/>
+  <text x="210" y="235" text-anchor="middle" font-family="SimSun,serif" font-size="28" font-weight="700" fill="#20262C">业务状态</text>
+  <text x="210" y="282" text-anchor="middle" font-family="SimSun,serif" font-size="22" fill="#37434C">工单 · 交易 · 页面</text>
+  <text x="210" y="320" text-anchor="middle" font-family="SimSun,serif" font-size="22" fill="#37434C">对话 · 告警 · 候选集</text>
+  <line x1="350" y1="270" x2="455" y2="270" stroke="#3B4650" stroke-width="3" marker-end="url(#a)"/>
+  <rect x="465" y="155" width="350" height="230" rx="18" fill="#D2D2E0"/>
+  <text x="640" y="215" text-anchor="middle" font-family="'Times New Roman',serif" font-size="40" font-weight="700" fill="#20262C">Jev</text>
+  <text x="640" y="262" text-anchor="middle" font-family="SimSun,serif" font-size="23" fill="#37434C">读取状态 + 预定义问题</text>
+  <text x="640" y="305" text-anchor="middle" font-family="SimSun,serif" font-size="23" fill="#37434C">并行完成多项语义判断</text>
+  <text x="640" y="347" text-anchor="middle" font-family="SimSun,serif" font-size="21" fill="#59636C">不生成自然语言答案</text>
+  <line x1="815" y1="270" x2="920" y2="270" stroke="#3B4650" stroke-width="3" marker-end="url(#a)"/>
+  <rect x="930" y="180" width="280" height="180" rx="18" fill="#E0E4CC"/>
+  <text x="1070" y="235" text-anchor="middle" font-family="SimSun,serif" font-size="28" font-weight="700" fill="#20262C">结构化输出</text>
+  <text x="1070" y="282" text-anchor="middle" font-family="SimSun,serif" font-size="22" fill="#37434C">选项 · 分值 · 概率</text>
+  <text x="1070" y="320" text-anchor="middle" font-family="SimSun,serif" font-size="22" fill="#37434C">置信度 · 类型化字段</text>
+  <rect x="70" y="455" width="1140" height="155" rx="18" fill="#FBE7A6"/>
+  <text x="640" y="515" text-anchor="middle" font-family="SimSun,serif" font-size="30" font-weight="700" fill="#20262C">一句话类比</text>
+  <text x="640" y="565" text-anchor="middle" font-family="'Times New Roman',SimSun,serif" font-size="28" fill="#20262C">LLM 负责生成答案，Jev 负责决定接下来发生什么</text>
+  <text x="640" y="662" text-anchor="middle" font-family="SimSun,serif" font-size="21" fill="#59636C">当前输入为纯文本 / JSON 文本状态；不支持图片、音频或视频</text>
+</svg>
