@@ -1,0 +1,35 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">jev-ultrafast 决策循环</title><desc id="desc">浏览器快照转元素表，Jev 一次选择操作和目标，安全校验后执行；仅输入文字时调用小型 LLM。</desc>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#3B4650"/></marker></defs>
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <text x="70" y="72" font-family="SimSun,'Songti SC',serif" font-size="42" font-weight="700" fill="#20262C">7 秒浏览器 Agent：快在整条决策链</text>
+  <text x="72" y="112" font-family="'Times New Roman',SimSun,serif" font-size="22" fill="#59636C">Dynamic action space · one request per decision cycle</text>
+  <rect x="55" y="185" width="225" height="150" rx="18" fill="#C4DCE6"/>
+  <text x="168" y="235" text-anchor="middle" font-family="SimSun,serif" font-size="25" font-weight="700" fill="#20262C">浏览器快照</text>
+  <text x="168" y="278" text-anchor="middle" font-family="SimSun,serif" font-size="20" fill="#37434C">读取可见控件</text>
+  <text x="168" y="310" text-anchor="middle" font-family="SimSun,serif" font-size="20" fill="#37434C">保留真实节点引用</text>
+  <line x1="280" y1="260" x2="340" y2="260" stroke="#3B4650" stroke-width="3" marker-end="url(#a)"/>
+  <rect x="350" y="185" width="225" height="150" rx="18" fill="#D2D2E0"/>
+  <text x="463" y="235" text-anchor="middle" font-family="SimSun,serif" font-size="25" font-weight="700" fill="#20262C">动态元素表</text>
+  <text x="463" y="278" text-anchor="middle" font-family="'Times New Roman',serif" font-size="20" fill="#37434C">[3] combobox</text>
+  <text x="463" y="310" text-anchor="middle" font-family="'Times New Roman',serif" font-size="20" fill="#37434C">[7] button</text>
+  <line x1="575" y1="260" x2="635" y2="260" stroke="#3B4650" stroke-width="3" marker-end="url(#a)"/>
+  <rect x="645" y="160" width="275" height="200" rx="18" fill="#E0E4CC"/>
+  <text x="783" y="212" text-anchor="middle" font-family="'Times New Roman',serif" font-size="34" font-weight="700" fill="#20262C">Jev</text>
+  <text x="783" y="258" text-anchor="middle" font-family="SimSun,serif" font-size="22" fill="#37434C">一次请求同时选</text>
+  <text x="783" y="296" text-anchor="middle" font-family="SimSun,serif" font-size="22" fill="#37434C">操作 + 匹配目标</text>
+  <text x="783" y="334" text-anchor="middle" font-family="'Times New Roman',serif" font-size="20" fill="#59636C">CLICK [7]</text>
+  <line x1="920" y1="260" x2="980" y2="260" stroke="#3B4650" stroke-width="3" marker-end="url(#a)"/>
+  <rect x="990" y="185" width="235" height="150" rx="18" fill="#FBE7A6"/>
+  <text x="1108" y="235" text-anchor="middle" font-family="SimSun,serif" font-size="25" font-weight="700" fill="#20262C">校验并执行</text>
+  <text x="1108" y="278" text-anchor="middle" font-family="SimSun,serif" font-size="20" fill="#37434C">页面新鲜度 · 遮挡</text>
+  <text x="1108" y="310" text-anchor="middle" font-family="SimSun,serif" font-size="20" fill="#37434C">几何位置 · 上下文</text>
+  <path d="M1108 335V405H783V375" fill="none" stroke="#3B4650" stroke-width="3" stroke-dasharray="8 7" marker-end="url(#a)"/>
+  <text x="968" y="398" text-anchor="middle" font-family="SimSun,serif" font-size="19" fill="#59636C">仅当操作为输入文本</text>
+  <rect x="645" y="425" width="275" height="105" rx="16" fill="#FFBFBF"/>
+  <text x="783" y="470" text-anchor="middle" font-family="SimSun,serif" font-size="24" font-weight="700" fill="#20262C">小型 LLM</text>
+  <text x="783" y="504" text-anchor="middle" font-family="SimSun,serif" font-size="20" fill="#37434C">只生成输入框文本</text>
+  <rect x="55" y="590" width="1170" height="85" rx="16" fill="#E0E4CC"/>
+  <text x="640" y="626" text-anchor="middle" font-family="SimSun,serif" font-size="23" font-weight="700" fill="#20262C">公开录制：17 次 Jev 请求 · Jev 延迟中位数 178 毫秒 · 最终验证完成 7.073 秒</text>
+  <text x="640" y="658" text-anchor="middle" font-family="SimSun,serif" font-size="19" fill="#59636C">这是单任务演示，不是通用可靠性基准</text>
+</svg>
