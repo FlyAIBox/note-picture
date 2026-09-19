@@ -1,0 +1,32 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Jev 的三种决策原语</title><desc id="desc">Choice、Score 与 Noul 三种类型化问题可在一次请求中并行计算。</desc>
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <text x="70" y="72" font-family="SimSun,'Songti SC',serif" font-size="42" font-weight="700" fill="#20262C">三种原语，把判断变成稳定接口</text>
+  <text x="72" y="112" font-family="'Times New Roman',SimSun,serif" font-size="22" fill="#59636C">Choice · Score · Noul</text>
+  <rect x="65" y="160" width="350" height="405" rx="18" fill="#C4DCE6"/>
+  <text x="240" y="225" text-anchor="middle" font-family="'Times New Roman',serif" font-size="38" font-weight="700" fill="#20262C">Choice</text>
+  <text x="240" y="275" text-anchor="middle" font-family="SimSun,serif" font-size="26" font-weight="700" fill="#20262C">固定选项，多选一</text>
+  <line x1="110" y1="310" x2="370" y2="310" stroke="#FFFFFF" stroke-width="3"/>
+  <text x="240" y="360" text-anchor="middle" font-family="SimSun,serif" font-size="22" fill="#37434C">工单交给哪个团队？</text>
+  <text x="240" y="405" text-anchor="middle" font-family="SimSun,serif" font-size="22" fill="#37434C">下一步调用哪个工具？</text>
+  <text x="240" y="485" text-anchor="middle" font-family="SimSun,serif" font-size="21" fill="#59636C">返回选中项、全部概率</text>
+  <text x="240" y="522" text-anchor="middle" font-family="SimSun,serif" font-size="21" fill="#59636C">与置信度 · 最多 255 项</text>
+  <rect x="465" y="160" width="350" height="405" rx="18" fill="#E0E4CC"/>
+  <text x="640" y="225" text-anchor="middle" font-family="'Times New Roman',serif" font-size="38" font-weight="700" fill="#20262C">Score</text>
+  <text x="640" y="275" text-anchor="middle" font-family="SimSun,serif" font-size="26" font-weight="700" fill="#20262C">按有序标准打分</text>
+  <line x1="510" y1="310" x2="770" y2="310" stroke="#FFFFFF" stroke-width="3"/>
+  <text x="640" y="360" text-anchor="middle" font-family="SimSun,serif" font-size="22" fill="#37434C">用户有多愤怒？</text>
+  <text x="640" y="405" text-anchor="middle" font-family="SimSun,serif" font-size="22" fill="#37434C">这条告警有多严重？</text>
+  <text x="640" y="485" text-anchor="middle" font-family="SimSun,serif" font-size="21" fill="#59636C">返回连续分值、等级图例</text>
+  <text x="640" y="522" text-anchor="middle" font-family="SimSun,serif" font-size="21" fill="#59636C">与置信度</text>
+  <rect x="865" y="160" width="350" height="405" rx="18" fill="#FBE7A6"/>
+  <text x="1040" y="225" text-anchor="middle" font-family="'Times New Roman',serif" font-size="38" font-weight="700" fill="#20262C">Noul</text>
+  <text x="1040" y="275" text-anchor="middle" font-family="SimSun,serif" font-size="26" font-weight="700" fill="#20262C">命题成立程度</text>
+  <line x1="910" y1="310" x2="1170" y2="310" stroke="#FFFFFF" stroke-width="3"/>
+  <text x="1040" y="360" text-anchor="middle" font-family="SimSun,serif" font-size="22" fill="#37434C">是否明确要求退款？</text>
+  <text x="1040" y="405" text-anchor="middle" font-family="SimSun,serif" font-size="22" fill="#37434C">是否包含敏感信息？</text>
+  <text x="1040" y="485" text-anchor="middle" font-family="SimSun,serif" font-size="21" fill="#59636C">返回零到一之间的值</text>
+  <text x="1040" y="522" text-anchor="middle" font-family="SimSun,serif" font-size="21" fill="#59636C">表示命题成立程度</text>
+  <rect x="65" y="610" width="1150" height="70" rx="14" fill="#D2D2E0"/>
+  <text x="640" y="654" text-anchor="middle" font-family="SimSun,serif" font-size="24" fill="#20262C">一次请求可混合多个问题，并行评估；代码只消费当前分支真正需要的答案</text>
+</svg>
