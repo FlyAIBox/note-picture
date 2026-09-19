@@ -1,0 +1,32 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">混合智能架构</title><desc id="desc">Jev 做决策，代码执行确定动作，LLM 处理推理和生成，人工处理高风险和低置信度样本。</desc>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#3B4650"/></marker></defs>
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <text x="70" y="72" font-family="SimSun,'Songti SC',serif" font-size="42" font-weight="700" fill="#20262C">Jev 的正确位置：混合智能里的路由层</text>
+  <text x="72" y="112" font-family="'Times New Roman',SimSun,serif" font-size="22" fill="#59636C">Decide · reason · execute · escalate</text>
+  <rect x="55" y="280" width="230" height="135" rx="18" fill="#C4DCE6"/>
+  <text x="170" y="332" text-anchor="middle" font-family="SimSun,serif" font-size="27" font-weight="700" fill="#20262C">业务状态</text>
+  <text x="170" y="375" text-anchor="middle" font-family="SimSun,serif" font-size="20" fill="#37434C">证据 · 规则 · 上下文</text>
+  <line x1="285" y1="348" x2="380" y2="348" stroke="#3B4650" stroke-width="3" marker-end="url(#a)"/>
+  <rect x="390" y="245" width="250" height="205" rx="18" fill="#D2D2E0"/>
+  <text x="515" y="310" text-anchor="middle" font-family="'Times New Roman',serif" font-size="38" font-weight="700" fill="#20262C">Jev</text>
+  <text x="515" y="355" text-anchor="middle" font-family="SimSun,serif" font-size="23" fill="#37434C">选择动作与路径</text>
+  <text x="515" y="395" text-anchor="middle" font-family="SimSun,serif" font-size="21" fill="#59636C">输出概率与置信度</text>
+  <line x1="640" y1="285" x2="760" y2="190" stroke="#3B4650" stroke-width="3" marker-end="url(#a)"/>
+  <line x1="640" y1="348" x2="760" y2="348" stroke="#3B4650" stroke-width="3" marker-end="url(#a)"/>
+  <line x1="640" y1="410" x2="760" y2="505" stroke="#3B4650" stroke-width="3" marker-end="url(#a)"/>
+  <text x="703" y="224" text-anchor="middle" font-family="SimSun,serif" font-size="19" fill="#59636C">明确、低风险</text>
+  <text x="702" y="333" text-anchor="middle" font-family="SimSun,serif" font-size="19" fill="#59636C">需推理或生成</text>
+  <text x="702" y="478" text-anchor="middle" font-family="SimSun,serif" font-size="19" fill="#59636C">高风险或不确定</text>
+  <rect x="770" y="130" width="450" height="125" rx="18" fill="#E0E4CC"/>
+  <text x="995" y="180" text-anchor="middle" font-family="SimSun,serif" font-size="27" font-weight="700" fill="#20262C">普通代码执行</text>
+  <text x="995" y="220" text-anchor="middle" font-family="SimSun,serif" font-size="20" fill="#37434C">路由 · 查询 · 归档 · 低风险自动化</text>
+  <rect x="770" y="285" width="450" height="125" rx="18" fill="#FBE7A6"/>
+  <text x="995" y="335" text-anchor="middle" font-family="'Times New Roman',SimSun,serif" font-size="27" font-weight="700" fill="#20262C">LLM 推理与生成</text>
+  <text x="995" y="375" text-anchor="middle" font-family="SimSun,serif" font-size="20" fill="#37434C">解释 · 写作 · 代码 · 复杂规划</text>
+  <rect x="770" y="440" width="450" height="125" rx="18" fill="#FFBFBF"/>
+  <text x="995" y="490" text-anchor="middle" font-family="SimSun,serif" font-size="27" font-weight="700" fill="#20262C">人工或独立验证</text>
+  <text x="995" y="530" text-anchor="middle" font-family="SimSun,serif" font-size="20" fill="#37434C">付款 · 删除 · 发消息 · 权限与合规</text>
+  <rect x="55" y="620" width="1165" height="65" rx="14" fill="#C4DCE6"/>
+  <text x="638" y="661" text-anchor="middle" font-family="SimSun,serif" font-size="24" fill="#20262C">模型只负责判断；真正的自动化边界由产品策略、代码护栏与结果验证共同决定</text>
+</svg>
