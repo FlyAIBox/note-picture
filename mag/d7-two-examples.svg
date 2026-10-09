@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="Songti SC, SimSun, STSong, serif" role="img" aria-labelledby="d7-title d7-desc">
+  <title id="d7-title">两个可运行示例：问题、方式、效果对照</title>
+  <desc id="d7-desc">案例一使用 coding-agent SDK 高层接入 MCP，案例二使用底层库手动组装。每列按问题、方式、效果三步展示，底部注明实测环境。</desc>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#3F3F3F"/>
+    </marker>
+  </defs>
+  <style>
+    .zh { font-family: "Songti SC", SimSun, STSong, serif; }
+    .en { font-family: "Times New Roman", Times, serif; }
+    .title-text { font-size: 36px; font-weight: bold; fill: #2B2B2B; }
+    .hdr { font-size: 26px; font-weight: bold; fill: #2B2B2B; }
+    .path-text { font-size: 18px; fill: #555555; }
+    .label { font-size: 24px; font-weight: bold; fill: #2B2B2B; }
+    .body { font-size: 22px; fill: #333333; }
+    .note-text { font-size: 20px; fill: #555555; }
+    .legend-text { font-size: 18px; fill: #555555; }
+    .node { stroke: #3F3F3F; stroke-width: 2; }
+    .arrow { stroke: #3F3F3F; stroke-width: 2.5; fill: none; marker-end: url(#arr); }
+  </style>
+
+  <rect x="0" y="0" width="1600" height="900" fill="#FAF8F4"/>
+  <text x="800" y="60" class="zh title-text" text-anchor="middle">两个可运行示例：问题 · 方式 · 效果</text>
+
+  <!-- 案例一 列 -->
+  <g id="c1-header">
+    <rect x="80" y="96" width="700" height="80" rx="14" class="node" fill="#FFFFFF"/>
+    <text x="430" y="128" class="zh hdr" text-anchor="middle">案例一 · SDK 高层接入</text>
+    <text x="430" y="160" class="en path-text" text-anchor="middle">packages/coding-agent/examples/sdk/14-codemode-mcp.ts</text>
+  </g>
+  <g id="c1-problem" data-text-layout="left">
+    <rect x="80" y="196" width="700" height="130" rx="14" class="node" fill="#C4DCE6"/>
+    <text x="110" y="230" class="zh label">要解决什么问题</text>
+    <text x="110" y="266" class="zh body">SDK 嵌入方如何像 CLI 一样，自动获得</text>
+    <text x="110" y="296" class="zh body">mcp.json 配置的服务器与两个配套扩展</text>
+  </g>
+  <line x1="430" y1="326" x2="430" y2="350" class="arrow"/>
+  <g id="c1-method" data-text-layout="left">
+    <rect x="80" y="352" width="700" height="160" rx="14" class="node" fill="#FBE7A6"/>
+    <text x="110" y="386" class="zh label">使用什么方式</text>
+    <text x="110" y="420" class="zh body">DefaultResourceLoader 挂载三个扩展工厂；</text>
+    <text x="110" y="450" class="zh body">defaultTools 追加 +codemode、+tool_search；</text>
+    <text x="110" y="480" class="zh body">bindExtensions 触发后台连接 MCP 服务器</text>
+  </g>
+  <line x1="430" y1="512" x2="430" y2="536" class="arrow"/>
+  <g id="c1-effect" data-text-layout="left">
+    <rect x="80" y="538" width="700" height="130" rx="14" class="node" fill="#E0E4CC"/>
+    <text x="110" y="572" class="zh label">达到什么效果</text>
+    <text x="110" y="608" class="zh body">回答正确：src/ 共 300 个 TypeScript 文件；</text>
+    <text x="110" y="638" class="zh body">MCP 工具与 codemode 同时进入工具列表</text>
+  </g>
+
+  <!-- 案例二 列 -->
+  <g id="c2-header">
+    <rect x="820" y="96" width="700" height="80" rx="14" class="node" fill="#FFFFFF"/>
+    <text x="1170" y="128" class="zh hdr" text-anchor="middle">案例二 · 底层库手动组装</text>
+    <text x="1170" y="160" class="en path-text" text-anchor="middle">packages/agent/examples/mcp-codemode/main.ts</text>
+  </g>
+  <g id="c2-problem" data-text-layout="left">
+    <rect x="820" y="196" width="700" height="130" rx="14" class="node" fill="#C4DCE6"/>
+    <text x="850" y="230" class="zh label">要解决什么问题</text>
+    <text x="850" y="266" class="zh body">不依赖 coding-agent，仅用底层库把任意</text>
+    <text x="850" y="296" class="zh body">stdio MCP 服务器的工具交给模型调用</text>
+  </g>
+  <line x1="1170" y1="326" x2="1170" y2="350" class="arrow"/>
+  <g id="c2-method" data-text-layout="left">
+    <rect x="820" y="352" width="700" height="160" rx="14" class="node" fill="#FBE7A6"/>
+    <text x="850" y="386" class="zh label">使用什么方式</text>
+    <text x="850" y="420" class="zh body">McpClient + StdioTransport 连接服务器；</text>
+    <text x="850" y="450" class="zh body">createMcpTools 转换工具定义；</text>
+    <text x="850" y="480" class="zh body">附加 codemode 工具，主文件约 50 行</text>
+  </g>
+  <line x1="1170" y1="512" x2="1170" y2="536" class="arrow"/>
+  <g id="c2-effect" data-text-layout="left">
+    <rect x="820" y="538" width="700" height="130" rx="14" class="node" fill="#E0E4CC"/>
+    <text x="850" y="572" class="zh label">达到什么效果</text>
+    <text x="850" y="608" class="zh body">一次 codemode 调用枚举 14 个工具，</text>
+    <text x="850" y="638" class="zh body">按要求两句话总结，进程正常退出</text>
+  </g>
+
+  <!-- 实测环境注释 -->
+  <g id="env-note">
+    <rect x="80" y="692" width="1440" height="80" rx="14" class="node" fill="#FFFFFF"/>
+    <text x="800" y="724" class="zh note-text" text-anchor="middle">实测环境：Pi 仓库 HEAD abe508e1b（tag v1.1.0）本地构建。</text>
+    <text x="800" y="754" class="zh note-text" text-anchor="middle">案例二将模型替换为 OpenAI 兼容网关（main-gw.ts），其余逻辑与原示例一致。</text>
+  </g>
+
+  <!-- 图例（右下，小色块） -->
+  <rect x="1210" y="808" width="28" height="20" rx="4" fill="#C4DCE6" stroke="#3F3F3F" stroke-width="1.5"/>
+  <text x="1248" y="824" class="zh legend-text">问题</text>
+  <rect x="1310" y="808" width="28" height="20" rx="4" fill="#FBE7A6" stroke="#3F3F3F" stroke-width="1.5"/>
+  <text x="1348" y="824" class="zh legend-text">方式</text>
+  <rect x="1410" y="808" width="28" height="20" rx="4" fill="#E0E4CC" stroke="#3F3F3F" stroke-width="1.5"/>
+  <text x="1448" y="824" class="zh legend-text">效果</text>
+</svg>
