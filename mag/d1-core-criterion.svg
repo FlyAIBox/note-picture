@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="d1-title d1-desc">
+  <title id="d1-title">一条判断标准：能力该不该进核心</title>
+  <desc id="d1-desc">判断分支图：候选能力进入一个判断条件——移除该能力后，它所要求的基础设施是否仍然值得保留。答案为是则进入核心做成通用机制，答案为否则进入可替换扩展。出处是 Pi PR 10040 的做法。</desc>
+  <defs>
+    <marker id="d1-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#3F3F3F"/>
+    </marker>
+  </defs>
+  <style>
+    .zh { font-family: "Songti SC", SimSun, STSong, serif; fill: #242424; }
+    .en { font-family: "Times New Roman", Times, serif; fill: #242424; }
+    .title { font-size: 48px; font-weight: 700; }
+    .subtitle { font-size: 22px; fill: #555555; }
+    .node { stroke: #3F3F3F; stroke-width: 2; }
+    .node-title { font-size: 27px; font-weight: 700; }
+    .node-body { font-size: 22px; fill: #555555; }
+    .relation { fill: none; stroke: #3F3F3F; stroke-width: 2.5; vector-effect: non-scaling-stroke; }
+    .edge-label { font-size: 22px; font-weight: 700; fill: #242424; }
+    .legend-text { font-size: 18px; fill: #555555; }
+  </style>
+
+  <text x="80" y="88" class="zh title">一条判断标准：能力该不该进核心</text>
+  <text x="80" y="128" class="zh subtitle">来源：Pi PR #10040 对 MCP、Codemode、Tool Search 的实际处理方式</text>
+
+  <g id="d1-input">
+    <rect x="120" y="360" width="340" height="180" rx="16" class="node" fill="#C4DCE6"/>
+    <text x="150" y="420" class="zh node-title">候选能力</text>
+    <text x="150" y="470" class="zh node-body">例：MCP、Codemode、</text>
+    <text x="150" y="504" class="en node-body">Tool Search</text>
+  </g>
+
+  <g id="d1-question">
+    <rect x="590" y="330" width="420" height="240" rx="16" class="node" fill="#FBE7A6"/>
+    <text x="620" y="390" class="zh node-title">判断条件</text>
+    <text x="620" y="440" class="zh node-body">移除该能力之后，</text>
+    <text x="620" y="474" class="zh node-body">它所要求的基础设施</text>
+    <text x="620" y="508" class="zh node-body">是否仍然值得保留？</text>
+  </g>
+
+  <g id="d1-yes">
+    <rect x="1140" y="200" width="380" height="200" rx="16" class="node" fill="#E0E4CC"/>
+    <text x="1170" y="260" class="zh node-title">进入核心</text>
+    <text x="1170" y="310" class="zh node-body">做成通用机制</text>
+    <text x="1170" y="344" class="zh node-body">例：工具注册表、暴露方式、</text>
+    <text x="1170" y="378" class="zh node-body">系统提示段、权限钩子</text>
+  </g>
+
+  <g id="d1-no">
+    <rect x="1140" y="500" width="380" height="200" rx="16" class="node" fill="#D2D2E0"/>
+    <text x="1170" y="560" class="zh node-title">进入扩展</text>
+    <text x="1170" y="610" class="zh node-body">可替换、可禁用</text>
+    <text x="1170" y="644" class="zh node-body">例：MCP 连接、OAuth、</text>
+    <text x="1170" y="678" class="zh node-body">服务器配置</text>
+  </g>
+
+  <g id="d1-edges">
+    <path id="d1-edge-in" d="M 460 450 H 590" class="relation" marker-end="url(#d1-arrow)" data-from="d1-input" data-to="d1-question" data-relation="input"/>
+    <path id="d1-edge-yes" d="M 1010 400 H 1070 V 300 H 1140" class="relation" marker-end="url(#d1-arrow)" data-from="d1-question" data-to="d1-yes" data-relation="decision-yes"/>
+    <path id="d1-edge-no" d="M 1010 500 H 1070 V 600 H 1140" class="relation" marker-end="url(#d1-arrow)" data-from="d1-question" data-to="d1-no" data-relation="decision-no"/>
+  </g>
+  <text x="1080" y="270" class="zh edge-label">是</text>
+  <text x="1080" y="660" class="zh edge-label">否</text>
+
+  <text x="80" y="750" class="zh subtitle">Pi 的结论：工具注册表独立于 MCP 仍有价值，故进入核心；</text>
+  <text x="80" y="782" class="zh subtitle">MCP 连接属于可替换扩展，禁用后核心功能不受影响。</text>
+  <rect x="1116" y="816" width="28" height="20" rx="4" fill="#C4DCE6" stroke="#3F3F3F" stroke-width="1.5"/>
+  <text x="1154" y="832" class="zh legend-text">输入</text>
+  <rect x="1214" y="816" width="28" height="20" rx="4" fill="#FBE7A6" stroke="#3F3F3F" stroke-width="1.5"/>
+  <text x="1252" y="832" class="zh legend-text">判断</text>
+  <rect x="1312" y="816" width="28" height="20" rx="4" fill="#E0E4CC" stroke="#3F3F3F" stroke-width="1.5"/>
+  <text x="1350" y="832" class="zh legend-text">进核心</text>
+  <rect x="1428" y="816" width="28" height="20" rx="4" fill="#D2D2E0" stroke="#3F3F3F" stroke-width="1.5"/>
+  <text x="1466" y="832" class="zh legend-text">进扩展</text>
+</svg>
