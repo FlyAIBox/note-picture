@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="d2-title d2-desc">
+  <title id="d2-title">MCP 规范 15 个月内从调用格式演进为互操作层</title>
+  <desc id="d2-desc">时间线图：四个公开可查的节点，交替是 MCP 规范侧与 Pi 侧的动作。2025-06-18 结构化结果入规范，2025-11-02 Pi 发文说明不支持 MCP，2026-07-28 规范无状态化，2026-09-29 Pi v0.99.0 内置 MCP 与 Codemode。</desc>
+  <defs>
+    <marker id="d2-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8A6B19"/>
+    </marker>
+  </defs>
+  <style>
+    .zh { font-family: "Songti SC", SimSun, STSong, serif; fill: #242424; }
+    .en { font-family: "Times New Roman", Times, serif; fill: #242424; }
+    .title { font-size: 48px; font-weight: 700; }
+    .subtitle { font-size: 22px; fill: #555555; }
+    .node { stroke: #3F3F3F; stroke-width: 2; }
+    .node-title { font-size: 26px; font-weight: 700; }
+    .node-body { font-size: 22px; fill: #555555; }
+    .date { font-family: "Times New Roman", Times, serif; font-size: 26px; font-weight: 700; fill: #242424; }
+    .relation { fill: none; stroke: #8A6B19; stroke-width: 2.5; vector-effect: non-scaling-stroke; }
+    .badge { fill: #FFFFFF; stroke: #8A6B19; stroke-width: 2; }
+    .badge-number { font-family: "Times New Roman", Times, serif; font-size: 22px; font-weight: 700; text-anchor: middle; dominant-baseline: central; fill: #242424; }
+    .legend-text { font-size: 18px; fill: #555555; }
+  </style>
+
+  <text x="80" y="88" class="zh title">MCP 规范 15 个月内从调用格式演进为互操作层</text>
+  <text x="80" y="128" class="zh subtitle">来源：MCP Changelog、Pi 官方博文、Pi CHANGELOG</text>
+
+  <text x="220" y="240" class="date" text-anchor="middle">2025-06-18</text>
+  <text x="610" y="240" class="date" text-anchor="middle">2025-11-02</text>
+  <text x="1000" y="240" class="date" text-anchor="middle">2026-07-28</text>
+  <text x="1390" y="240" class="date" text-anchor="middle">2026-09-29</text>
+
+  <g id="d2-timeline" data-ordered-flow="true" aria-label="MCP 与 Pi 的十五个月时间线">
+    <g id="d2-relations">
+      <path id="d2-relation-1" d="M 380 385 H 450" class="relation" marker-end="url(#d2-arrow)" data-from="d2-card-1" data-to="d2-card-2" data-relation="flow" data-sequence="1"/>
+      <path id="d2-relation-2" d="M 770 385 H 840" class="relation" marker-end="url(#d2-arrow)" data-from="d2-card-2" data-to="d2-card-3" data-relation="flow" data-sequence="2"/>
+      <path id="d2-relation-3" d="M 1160 385 H 1230" class="relation" marker-end="url(#d2-arrow)" data-from="d2-card-3" data-to="d2-card-4" data-relation="flow" data-sequence="3"/>
+    </g>
+
+    <g id="d2-nodes">
+      <g id="d2-card-1">
+        <rect x="60" y="270" width="320" height="230" rx="16" class="node" fill="#E0E4CC"/>
+        <text x="88" y="326" class="zh node-title">MCP 规范</text>
+        <text x="88" y="388" class="zh node-body">结构化结果入规范</text>
+        <text x="88" y="422" class="en node-body">structuredContent</text>
+        <text x="88" y="456" class="en node-body">outputSchema</text>
+      </g>
+      <g id="d2-card-2">
+        <rect x="450" y="270" width="320" height="230" rx="16" class="node" fill="#FBE7A6"/>
+        <text x="478" y="326" class="zh node-title">Pi</text>
+        <text x="478" y="388" class="zh node-body">发文说明不支持 MCP</text>
+        <text x="478" y="422" class="zh node-body">列出三项接入成本</text>
+        <text x="478" y="456" class="en node-body">you-said-no-mcp</text>
+      </g>
+      <g id="d2-card-3">
+        <rect x="840" y="270" width="320" height="230" rx="16" class="node" fill="#E0E4CC"/>
+        <text x="868" y="326" class="zh node-title">MCP 规范</text>
+        <text x="868" y="388" class="zh node-body">规范无状态化</text>
+        <text x="868" y="422" class="zh node-body">Header 路由</text>
+        <text x="868" y="456" class="zh node-body">面向生产部署</text>
+      </g>
+      <g id="d2-card-4">
+        <rect x="1230" y="270" width="320" height="230" rx="16" class="node" fill="#FBE7A6"/>
+        <text x="1258" y="326" class="en node-title">Pi v0.99.0</text>
+        <text x="1258" y="388" class="zh node-body">内置 MCP 与 Codemode</text>
+        <text x="1258" y="422" class="zh node-body">核心只加通用机制</text>
+        <text x="1258" y="456" class="zh node-body">连接放进可替换扩展</text>
+      </g>
+    </g>
+
+    <g id="d2-sequence-badges" aria-label="流程顺序">
+      <g data-sequence-label="1">
+        <circle cx="415" cy="385" r="18" class="badge"/>
+        <text x="415" y="385" class="badge-number">1</text>
+      </g>
+      <g data-sequence-label="2">
+        <circle cx="805" cy="385" r="18" class="badge"/>
+        <text x="805" y="385" class="badge-number">2</text>
+      </g>
+      <g data-sequence-label="3">
+        <circle cx="1195" cy="385" r="18" class="badge"/>
+        <text x="1195" y="385" class="badge-number">3</text>
+      </g>
+    </g>
+  </g>
+
+  <rect x="1072" y="816" width="28" height="20" rx="4" fill="#E0E4CC" stroke="#3F3F3F" stroke-width="1.5"/>
+  <text x="1110" y="832" class="zh legend-text">规范侧的动作</text>
+  <rect x="1280" y="816" width="28" height="20" rx="4" fill="#FBE7A6" stroke="#3F3F3F" stroke-width="1.5"/>
+  <text x="1318" y="832" class="zh legend-text">Pi 侧的动作</text>
+  <text x="80" y="790" class="zh subtitle">结论：规范重心从调用格式转向互操作层。</text>
+</svg>
