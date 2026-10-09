@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="d3-title d3-desc">
+  <title id="d3-title">Pi 的 MCP 实现分三层，核心只留通用机制</title>
+  <desc id="d3-desc">架构分层图：核心层只有 mcp-servers.ts 负责类型校验与注册表；集成层是可替换的内置 MCP 扩展，负责连接、工具注册、系统提示段；协议层是独立客户端库 pi-mcp，负责 JSON-RPC、stdio、Streamable HTTP 与 OAuth。三层之间两条依赖箭头。</desc>
+  <defs>
+    <marker id="d3-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#3F3F3F"/>
+    </marker>
+  </defs>
+  <style>
+    .zh { font-family: "Songti SC", SimSun, STSong, serif; fill: #242424; }
+    .en { font-family: "Times New Roman", Times, serif; fill: #242424; }
+    .title { font-size: 48px; font-weight: 700; }
+    .subtitle { font-size: 22px; fill: #555555; }
+    .node { stroke: #3F3F3F; stroke-width: 2; }
+    .node-title { font-size: 27px; font-weight: 700; }
+    .node-body { font-size: 22px; fill: #555555; }
+    .node-path { font-size: 20px; fill: #555555; }
+    .relation { fill: none; stroke: #3F3F3F; stroke-width: 2.5; vector-effect: non-scaling-stroke; }
+    .edge-label { font-size: 20px; fill: #555555; }
+    .legend-text { font-size: 18px; fill: #555555; }
+  </style>
+
+  <text x="80" y="88" class="zh title">Pi 的 MCP 实现分三层，核心只留通用机制</text>
+  <text x="80" y="128" class="zh subtitle">来源：pi v1.1.0 源码，packages/coding-agent 与 packages/mcp</text>
+
+  <g id="d3-core">
+    <rect x="100" y="200" width="430" height="300" rx="16" class="node" fill="#E0E4CC"/>
+    <text x="130" y="258" class="zh node-title">核心层：注册与校验</text>
+    <text x="130" y="306" class="en node-path" data-text-layout="left">core/mcp-servers.ts</text>
+    <text x="130" y="352" class="zh node-body">校验配置、存注册表</text>
+    <text x="130" y="386" class="zh node-body">定义暴露方式类型</text>
+    <text x="130" y="420" class="zh node-body">头注释写明：核心仅校验</text>
+    <text x="130" y="454" class="zh node-body">与存储，连接交给扩展</text>
+  </g>
+
+  <g id="d3-ext">
+    <rect x="620" y="200" width="430" height="300" rx="16" class="node" fill="#FBE7A6"/>
+    <text x="650" y="258" class="zh node-title">集成层：内置扩展</text>
+    <text x="650" y="306" class="en node-path" data-text-layout="left">extensions/mcp/</text>
+    <text x="650" y="352" class="zh node-body">后台连接服务器</text>
+    <text x="650" y="386" class="zh node-body">注册 mcp__ 前缀工具</text>
+    <text x="650" y="420" class="zh node-body">生成系统提示段</text>
+    <text x="650" y="454" class="zh node-body">可替换、可禁用</text>
+  </g>
+
+  <g id="d3-proto">
+    <rect x="1140" y="200" width="430" height="300" rx="16" class="node" fill="#C4DCE6"/>
+    <text x="1170" y="258" class="zh node-title">协议层：客户端库</text>
+    <text x="1170" y="306" class="en node-path" data-text-layout="left">packages/mcp</text>
+    <text x="1170" y="352" class="en node-body">JSON-RPC + stdio</text>
+    <text x="1170" y="386" class="en node-body">Streamable HTTP</text>
+    <text x="1170" y="420" class="en node-body">OAuth 2.1 + PKCE</text>
+    <text x="1170" y="454" class="zh node-body">不依赖 Pi，可单独使用</text>
+  </g>
+
+  <g id="d3-edges">
+    <path id="d3-edge-1" d="M 620 350 H 530" class="relation" marker-end="url(#d3-arrow)" data-from="d3-ext" data-to="d3-core" data-relation="reads-registry"/>
+    <path id="d3-edge-2" d="M 1050 350 H 1140" class="relation" marker-end="url(#d3-arrow)" data-from="d3-ext" data-to="d3-proto" data-relation="uses-client"/>
+  </g>
+  <text x="541" y="330" class="zh edge-label">读注册表</text>
+  <text x="1060" y="330" class="zh edge-label">调用客户端库</text>
+
+  <g id="d3-note">
+    <rect x="100" y="570" width="1470" height="150" rx="16" class="node" fill="#FFFFFF"/>
+    <text x="835" y="628" class="zh node-title" text-anchor="middle">替换规则（据 extensions/index.ts 注释）</text>
+    <text x="835" y="676" class="zh node-body" text-anchor="middle">第三方扩展注册 codemode、tool_search 或 /mcp 时，内置扩展被排除，两者不会同时运行。</text>
+  </g>
+
+  <rect x="940" y="816" width="28" height="20" rx="4" fill="#E0E4CC" stroke="#3F3F3F" stroke-width="1.5"/>
+  <text x="978" y="832" class="zh legend-text">核心（通用机制）</text>
+  <rect x="1154" y="816" width="28" height="20" rx="4" fill="#FBE7A6" stroke="#3F3F3F" stroke-width="1.5"/>
+  <text x="1192" y="832" class="zh legend-text">扩展（可替换）</text>
+  <rect x="1348" y="816" width="28" height="20" rx="4" fill="#C4DCE6" stroke="#3F3F3F" stroke-width="1.5"/>
+  <text x="1386" y="832" class="zh legend-text">协议库（独立）</text>
+</svg>
