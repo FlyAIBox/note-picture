@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="d5-title d5-desc">
+  <title id="d5-title">工具接入的两条路径：全量声明与按需发现</title>
+  <desc id="d5-desc">两条并行流程各四步。上面一条是全量声明：连接服务器后把全部工具定义声明给模型，每轮对话都携带，上下文随服务器数量线性增长。下面一条是 Pi 默认的按需发现：工具仅注册不声明，脚本在沙箱内按需搜索并组合调用，仅调用时占用上下文。</desc>
+  <defs>
+    <marker id="d5-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8A6B19"/>
+    </marker>
+  </defs>
+  <style>
+    .zh { font-family: "Songti SC", SimSun, STSong, serif; fill: #242424; }
+    .en { font-family: "Times New Roman", Times, serif; fill: #242424; }
+    .title { font-size: 48px; font-weight: 700; }
+    .subtitle { font-size: 22px; fill: #555555; }
+    .path-label { font-size: 26px; font-weight: 700; }
+    .node { stroke: #3F3F3F; stroke-width: 2; }
+    .node-title { font-size: 25px; font-weight: 700; }
+    .node-body { font-size: 20px; fill: #555555; }
+    .relation { fill: none; stroke: #8A6B19; stroke-width: 2.5; vector-effect: non-scaling-stroke; }
+    .badge { fill: #FFFFFF; stroke: #8A6B19; stroke-width: 2; }
+    .badge-number { font-family: "Times New Roman", Times, serif; font-size: 22px; font-weight: 700; text-anchor: middle; dominant-baseline: central; fill: #242424; }
+    .legend-text { font-size: 18px; fill: #555555; }
+  </style>
+
+  <text x="80" y="88" class="zh title">工具接入的两条路径：全量声明与按需发现</text>
+  <text x="80" y="128" class="zh subtitle">来源：extensions/codemode 与 extensions/mcp 的默认暴露方式 codemode</text>
+
+  <text x="80" y="196" class="zh path-label">路径一：全量声明（非 Pi 默认）</text>
+  <g id="d5-flow-a" data-ordered-flow="true">
+    <g id="d5-a-edges">
+      <path id="d5-a-e1" d="M 370 310 H 450" class="relation" marker-end="url(#d5-arrow)" data-from="d5-a-1" data-to="d5-a-2" data-relation="flow" data-sequence="1"/>
+      <path id="d5-a-e2" d="M 740 310 H 820" class="relation" marker-end="url(#d5-arrow)" data-from="d5-a-2" data-to="d5-a-3" data-relation="flow" data-sequence="2"/>
+      <path id="d5-a-e3" d="M 1110 310 H 1190" class="relation" marker-end="url(#d5-arrow)" data-from="d5-a-3" data-to="d5-a-4" data-relation="flow" data-sequence="3"/>
+    </g>
+    <g id="d5-a-1">
+      <rect x="80" y="220" width="290" height="180" rx="16" class="node" fill="#C4DCE6"/>
+      <text x="110" y="278" class="zh node-title">连接服务器</text>
+      <text x="110" y="320" class="zh node-body">获取工具列表</text>
+    </g>
+    <g id="d5-a-2">
+      <rect x="450" y="220" width="290" height="180" rx="16" class="node" fill="#FBE7A6"/>
+      <text x="480" y="278" class="zh node-title">全部声明</text>
+      <text x="480" y="320" class="zh node-body">全部定义声明给模型</text>
+    </g>
+    <g id="d5-a-3">
+      <rect x="820" y="220" width="290" height="180" rx="16" class="node" fill="#FBE7A6"/>
+      <text x="850" y="278" class="zh node-title">每轮携带</text>
+      <text x="850" y="320" class="zh node-body">定义常驻上下文</text>
+    </g>
+    <g id="d5-a-4">
+      <rect x="1190" y="220" width="290" height="180" rx="16" class="node" fill="#F6C8C8"/>
+      <text x="1220" y="278" class="zh node-title">成本线性增长</text>
+      <text x="1220" y="320" class="zh node-body">随服务器数线性增长</text>
+    </g>
+    <g aria-label="路径一顺序">
+      <g data-sequence-label="1"><circle cx="410" cy="310" r="22" class="badge"/><text x="410" y="310" class="badge-number">1</text></g>
+      <g data-sequence-label="2"><circle cx="780" cy="310" r="22" class="badge"/><text x="780" y="310" class="badge-number">2</text></g>
+      <g data-sequence-label="3"><circle cx="1150" cy="310" r="22" class="badge"/><text x="1150" y="310" class="badge-number">3</text></g>
+    </g>
+  </g>
+
+  <text x="80" y="496" class="zh path-label">路径二：按需发现（Pi 的默认，exposure = codemode）</text>
+  <g id="d5-flow-b" data-ordered-flow="true">
+    <g id="d5-b-edges">
+      <path id="d5-b-e1" d="M 370 610 H 450" class="relation" marker-end="url(#d5-arrow)" data-from="d5-b-1" data-to="d5-b-2" data-relation="flow" data-sequence="1"/>
+      <path id="d5-b-e2" d="M 740 610 H 820" class="relation" marker-end="url(#d5-arrow)" data-from="d5-b-2" data-to="d5-b-3" data-relation="flow" data-sequence="2"/>
+      <path id="d5-b-e3" d="M 1110 610 H 1190" class="relation" marker-end="url(#d5-arrow)" data-from="d5-b-3" data-to="d5-b-4" data-relation="flow" data-sequence="3"/>
+    </g>
+    <g id="d5-b-1">
+      <rect x="80" y="520" width="290" height="180" rx="16" class="node" fill="#C4DCE6"/>
+      <text x="110" y="578" class="zh node-title">连接服务器</text>
+      <text x="110" y="620" class="zh node-body">获取工具列表</text>
+    </g>
+    <g id="d5-b-2">
+      <rect x="450" y="520" width="290" height="180" rx="16" class="node" fill="#FBE7A6"/>
+      <text x="480" y="578" class="zh node-title">仅注册</text>
+      <text x="480" y="620" class="zh node-body">不声明给模型</text>
+    </g>
+    <g id="d5-b-3">
+      <rect x="820" y="520" width="290" height="180" rx="16" class="node" fill="#FBE7A6"/>
+      <text x="850" y="578" class="zh node-title">脚本发现</text>
+      <text x="850" y="620" class="zh node-body">在沙箱内搜索并调用</text>
+    </g>
+    <g id="d5-b-4">
+      <rect x="1190" y="520" width="290" height="180" rx="16" class="node" fill="#E0E4CC"/>
+      <text x="1220" y="578" class="zh node-title">按需占用</text>
+      <text x="1220" y="620" class="zh node-body">仅调用时占用上下文</text>
+    </g>
+    <g aria-label="路径二顺序">
+      <g data-sequence-label="1"><circle cx="410" cy="610" r="22" class="badge"/><text x="410" y="610" class="badge-number">1</text></g>
+      <g data-sequence-label="2"><circle cx="780" cy="610" r="22" class="badge"/><text x="780" y="610" class="badge-number">2</text></g>
+      <g data-sequence-label="3"><circle cx="1150" cy="610" r="22" class="badge"/><text x="1150" y="610" class="badge-number">3</text></g>
+    </g>
+  </g>
+
+  <rect x="1092" y="808" width="28" height="20" rx="4" fill="#C4DCE6" stroke="#3F3F3F" stroke-width="1.5"/>
+  <text x="1130" y="824" class="zh legend-text">入口</text>
+  <rect x="1210" y="808" width="28" height="20" rx="4" fill="#FBE7A6" stroke="#3F3F3F" stroke-width="1.5"/>
+  <text x="1248" y="824" class="zh legend-text">处理</text>
+  <rect x="1328" y="808" width="28" height="20" rx="4" fill="#F6C8C8" stroke="#3F3F3F" stroke-width="1.5"/>
+  <text x="1366" y="824" class="zh legend-text">代价</text>
+  <rect x="1446" y="808" width="28" height="20" rx="4" fill="#E0E4CC" stroke="#3F3F3F" stroke-width="1.5"/>
+  <text x="1484" y="824" class="zh legend-text">收益</text>
+</svg>
