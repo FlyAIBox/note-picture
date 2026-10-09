@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="d4-title d4-desc">
+  <title id="d4-title">核心定义五种暴露方式，MCP 扩展只用其中四种</title>
+  <desc id="d4-desc">对照图：左侧列出核心层 ToolExposure 的五个取值 direct、model-only、codemode、deferred、hidden 及各自含义；右侧说明 MCP 扩展只使用四个取值，并且把 codemode 在登记时映射为核心层的 deferred，差别只在激活哪个发现工具。</desc>
+  <defs>
+    <marker id="d4-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#3F3F3F"/>
+    </marker>
+  </defs>
+  <style>
+    .zh { font-family: "Songti SC", SimSun, STSong, serif; fill: #242424; }
+    .en { font-family: "Times New Roman", Times, serif; fill: #242424; }
+    .title { font-size: 48px; font-weight: 700; }
+    .subtitle { font-size: 22px; fill: #555555; }
+    .node { stroke: #3F3F3F; stroke-width: 2; }
+    .node-title { font-size: 27px; font-weight: 700; }
+    .node-sub { font-size: 20px; fill: #555555; }
+    .row-en { font-size: 24px; font-weight: 700; }
+    .row-zh { font-size: 20px; fill: #555555; }
+    .relation { fill: none; stroke: #3F3F3F; stroke-width: 2.5; vector-effect: non-scaling-stroke; }
+    .edge-label { font-size: 20px; fill: #555555; }
+    .legend-text { font-size: 18px; fill: #555555; }
+  </style>
+
+  <text x="80" y="88" class="zh title">核心定义五种暴露方式，MCP 扩展只用其中四种</text>
+  <text x="80" y="128" class="zh subtitle">来源：core/extensions/types.ts:516 与 extensions/mcp/tools.ts:44</text>
+
+  <g id="d4-core">
+    <rect x="80" y="180" width="760" height="420" rx="16" class="node" fill="#E0E4CC"/>
+    <text x="110" y="232" class="zh node-title">核心层：ToolExposure 五种取值</text>
+    <text x="110" y="292" class="en row-en" data-text-layout="left">direct</text>
+    <text x="110" y="322" class="zh row-zh" data-text-layout="left">声明给模型，也可调用；注册即生效</text>
+    <text x="110" y="378" class="en row-en" data-text-layout="left">model-only</text>
+    <text x="110" y="408" class="zh row-zh" data-text-layout="left">声明给模型，但永不执行；用于编排与引导</text>
+    <text x="110" y="464" class="en row-en" data-text-layout="left">codemode</text>
+    <text x="110" y="494" class="zh row-zh" data-text-layout="left">注册即可被脚本调用，不声明给模型</text>
+    <text x="110" y="550" class="en row-en" data-text-layout="left">deferred　/　hidden</text>
+  </g>
+  <text x="110" y="580" class="zh row-zh">前者仅可由工具搜索发现；后者已注册但不可达</text>
+
+  <g id="d4-mcp">
+    <rect x="900" y="250" width="620" height="320" rx="16" class="node" fill="#FBE7A6"/>
+    <text x="930" y="302" class="zh node-title">MCP 扩展实际用的四种</text>
+    <text x="930" y="352" class="en row-en" data-text-layout="left">codemode → deferred</text>
+    <text x="930" y="382" class="zh row-zh" data-text-layout="left">注册时映射为 deferred，并激活 codemode 工具</text>
+    <text x="930" y="422" class="en row-en" data-text-layout="left">deferred</text>
+    <text x="930" y="452" class="zh row-zh" data-text-layout="left">保持原值，并激活 tool search 工具</text>
+    <text x="930" y="492" class="en row-en" data-text-layout="left">direct / hidden</text>
+    <text x="930" y="522" class="zh row-zh" data-text-layout="left">前者直接声明；服务器断开时改注册为 hidden</text>
+  </g>
+
+  <g id="d4-edges">
+    <path id="d4-edge" d="M 840 390 H 900" class="relation" marker-end="url(#d4-arrow)" data-from="d4-core" data-to="d4-mcp" data-relation="subset"/>
+  </g>
+
+  <g id="d4-note">
+    <rect x="80" y="650" width="1440" height="110" rx="16" class="node" fill="#FFFFFF"/>
+    <text x="800" y="700" class="zh row-zh" text-anchor="middle">源码注释（tools.ts:40）：codemode 与 deferred 都不将工具写入脚本描述，</text>
+    <text x="800" y="732" class="zh row-zh" text-anchor="middle">区别仅在于扩展激活哪个发现工具：一个用 codemode，一个用 tool search。</text>
+  </g>
+
+  <rect x="1134" y="816" width="28" height="20" rx="4" fill="#E0E4CC" stroke="#3F3F3F" stroke-width="1.5"/>
+  <text x="1172" y="832" class="zh legend-text">核心定义</text>
+  <rect x="1272" y="816" width="28" height="20" rx="4" fill="#FBE7A6" stroke="#3F3F3F" stroke-width="1.5"/>
+  <text x="1310" y="832" class="zh legend-text">扩展用法</text>
+  <rect x="1410" y="816" width="28" height="20" rx="4" fill="#FFFFFF" stroke="#3F3F3F" stroke-width="1.5"/>
+  <text x="1448" y="832" class="zh legend-text">源码注释</text>
+</svg>
