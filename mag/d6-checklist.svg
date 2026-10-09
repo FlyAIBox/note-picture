@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="d6-title d6-desc">
+  <title id="d6-title">判断一项能力该不该进核心：四个自问</title>
+  <desc id="d6-desc">清单图：四个提问卡片自上而下排列，分别问基础设施是否独立成立、禁用后核心是否完整、能否替换或禁用、以及默认值优先保障什么；底部结论条说明支持是能力，选择是判断。</desc>
+  <defs>
+    <marker id="d6-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#3F3F3F"/>
+    </marker>
+  </defs>
+  <style>
+    .zh { font-family: "Songti SC", SimSun, STSong, serif; fill: #242424; }
+    .en { font-family: "Times New Roman", Times, serif; fill: #242424; }
+    .title { font-size: 48px; font-weight: 700; }
+    .subtitle { font-size: 22px; fill: #555555; }
+    .node { stroke: #3F3F3F; stroke-width: 2; }
+    .q-title { font-size: 25px; font-weight: 700; }
+    .q-body { font-size: 20px; fill: #555555; }
+    .q-num { font-family: "Times New Roman", Times, serif; font-size: 30px; font-weight: 700; }
+    .relation { stroke: #3F3F3F; stroke-width: 2.5; }
+    .legend-text { font-size: 18px; fill: #555555; }
+  </style>
+
+  <text x="80" y="88" class="zh title">判断一项能力该不该进核心：四个自问</text>
+  <text x="80" y="128" class="zh subtitle">来源：由 Pi 对 MCP、Codemode、Tool Search 的处理方式归纳，非源码原句</text>
+
+  <g id="d6-q1" data-text-layout="left">
+    <rect x="80" y="180" width="1440" height="130" rx="16" class="node" fill="#C4DCE6"/>
+    <text x="120" y="240" class="en q-num">1</text>
+    <text x="180" y="240" class="zh q-title">该能力所要求的基础设施，在移除该能力后是否仍然成立？</text>
+    <text x="180" y="282" class="zh q-body">工具注册表、暴露方式、权限钩子独立于 MCP 仍有价值 → 进入核心</text>
+  </g>
+
+  <g id="d6-q2" data-text-layout="left">
+    <rect x="80" y="336" width="1440" height="130" rx="16" class="node" fill="#FBE7A6"/>
+    <text x="120" y="396" class="en q-num">2</text>
+    <text x="180" y="396" class="zh q-title">禁用该能力后，核心功能是否保持完整？</text>
+    <text x="180" y="438" class="zh q-body">--no-mcp 下正常运行，证明二者边界清晰 → 适合作为扩展</text>
+  </g>
+
+  <g id="d6-q3" data-text-layout="left">
+    <rect x="80" y="492" width="1440" height="130" rx="16" class="node" fill="#E0E4CC"/>
+    <text x="120" y="552" class="en q-num">3</text>
+    <text x="180" y="552" class="zh q-title">第三方扩展能否完整接管该能力？</text>
+    <text x="180" y="594" class="zh q-body">可接管时内置版本被排除，二者不同时运行 → replaceable</text>
+  </g>
+
+  <g id="d6-q4" data-text-layout="left">
+    <rect x="80" y="648" width="1440" height="130" rx="16" class="node" fill="#D2D2E0"/>
+    <text x="120" y="708" class="en q-num">4</text>
+    <text x="180" y="708" class="zh q-title">默认值优先保障什么——便捷性，还是上下文效率？</text>
+    <text x="180" y="750" class="zh q-body">默认 codemode：接受多一步发现，换取工具定义不占用上下文</text>
+  </g>
+
+  <rect x="1038" y="808" width="28" height="20" rx="4" fill="#C4DCE6" stroke="#3F3F3F" stroke-width="1.5"/>
+  <text x="1076" y="824" class="zh legend-text">基础设施</text>
+  <rect x="1192" y="808" width="28" height="20" rx="4" fill="#FBE7A6" stroke="#3F3F3F" stroke-width="1.5"/>
+  <text x="1230" y="824" class="zh legend-text">边界</text>
+  <rect x="1310" y="808" width="28" height="20" rx="4" fill="#E0E4CC" stroke="#3F3F3F" stroke-width="1.5"/>
+  <text x="1348" y="824" class="zh legend-text">接管</text>
+  <rect x="1428" y="808" width="28" height="20" rx="4" fill="#D2D2E0" stroke="#3F3F3F" stroke-width="1.5"/>
+  <text x="1466" y="824" class="zh legend-text">默认值</text>
+</svg>
